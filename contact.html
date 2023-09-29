@@ -103,13 +103,26 @@
 
                     <div class="contact__right">
                         <form action="https://formsubmit.co/a0935109965@gmail.com" method="POST">
-                            <input type="text" name="name" placeholder="Your Name" required>
-                            <input type="email" name="email" placeholder="Your Email" required>
-                            <textarea rows="6" name="message" placeholder="Your Message" required></textarea>
+                            <div class="inputBox">
+                                <input type="text" name="name" id="name" required>
+                                <span>Name</span>
+                            </div>
+                            
+                            <div class="inputBox">
+                                <input type="email" name="email" required>
+                                <span>Email</span>
+                            </div>
+                            
+                            <div class="inputBox">
+                                <textarea rows="6" name="message" required></textarea>
+                                <span class="span-message">Message</span>
+                            </div>
+                            
                             <input type="hidden" name="_captcha" value="false">
                             <input type="hidden" name="_template" value="box">
+
+                            <button type="submit" class="submit">Send
                         </form>
-                        <button type="submit" class="submit">Send
                     </div>
                 </div>
             </div>
