@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEI Studio</title>
+    <link rel="short-cut icon" type="x-icon" href="images/WEI logo_cube.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalam&family=Permanent+Marker&family=Rock+Salt&display=swap"
+        rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+
+    <script src="smoothscroll.js" defer></script>
+    <script src="nav.js" defer></script>
+    <script src="highlights.js" defer></script>
+</head>
+
+<body>
+    <div class="loader"></div>
+    <div class="header" id="header">
+        <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false"></button>
+        <h1>WEI Studio</h1>
+
+        <nav>
+            <div class="logo">
+                <a href="index.html"><img src="images/WEI logo.png" alt="Logo"></a>
+            </div>
+            <ul> <!-- \*導覽頁*\ -->
+                <li><a href="index.html">Home</a></li>
+                <li><a href="porfolio.html">Portfolio</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- bar -->
+    <section id="primary-navigation" data-visible="false" class="navbar primary-navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="porfolio.html">Portfolio</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </section>
+    <!-- bar -->
+
+    <main>
+
+        <section class="title about__title">
+            <div class="title__slider">
+                <h3>-About-<br></h3>
+            </div>
+            <a class="down-btn">
+                <div class="scroll-down"></div>
+            </a>
+        </section>
+
+        <section class="about" id="about">
+            <div class="about__greeting">
+                <div class="about__greeting-bg">
+                    <h3>你好 我是陳俊瑋</h3>
+                </div>
+
+            </div>
+            <div class="about__introduction-container">
+                <div class="about__introduction-grid">
+                    <div class="about__profile-image">
+                        <img src="images/profile polaroid.jpg" alt="">
+                    </div>
+                    <div class="about__introduction-content">
+                        <!-- <p>Hi there,<br>
+                            I am a junior majoring in <span class="highlight">Electrical Engineering</span>, and I have a wide range of interests that
+                            include Photoshop, playing the guitar, watching anime, and more.
+                            I am actually an anime enthusiast, passionate about exploring various genres of animation.
+                            This passion for anime has not only broadened my horizons but has also fueled my creativity,
+                            inspiring me to create my own works. <br><br>
+
+                            I would say my personality is characterized by diligence, a constant pursuit of innovation,
+                            and a passion for sparking creativity.
+                            In my academic journey, I have taken courses such as Digital System Design (Verilog),
+                            Electronic Circuit Experiments, Machine Learning, and Natural Language Processing.
+                            These courses have not only expanded my knowledge but have also enabled me to apply this
+                            knowledge to real-world problem-solving. <br><br>
+
+                            Beyond academics, I actively participate in campus activities and have been a member of the
+                            guitar club and the departmental student association.
+                            These experiences have taught me valuable lessons in teamwork and organizational skills.
+                            <br><br>
+
+                            Thank you for your attention! If you need more information or have any other questions,
+                            please feel free to reach out to me.
+                        </p> -->
+                        <p>
+                            Hi there,<br>
+                            I'm currently a junior majoring in <span class="highlight">Electrical&nbsp;Engineering</span>,
+                            and also a passionate designer.
+                            My design journey was sparked by a deep enthusiasm for certain anime and TV series.
+                            I was inspired to create my own works based on these shows, which led me to embark on a
+                            self-taught journey to learn <span class="highlight">Photoshop</span> and <span class="highlight">Illustrator</span>.
+                            <br><br>
+                            Of course, inspiration for my work naturally stems from <span class="highlight">anime</span> and <span class="highlight">TV&nbsp;series</span>.
+                            These fictional worlds serve as the cornerstone of my design expedition, driving me to acquire the skills necessary to craft unique <span class="highlight">wallpapers</span>, <span class="highlight">avatars</span>, and more.
+                            I really enjoy translating these inspirations into visual designs, crafting those unique and
+                            captivating artworks.
+                            <br><br>
+                            Feel free to explore my portfolio. I hope that my design pieces inspire you and provide you
+                            with delightful creative experiences.
+                            If you have any questions or collaboration opportunities, please don't hesitate to get in
+                            touch.
+                            I look forward to sharing more design adventures with you!
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="about__information-container">
+                <div class="about__information-grid">
+                    <div class="about__information-content">
+                        <h3>Education</h3>
+                        <hr>
+                        <ul>
+                            <li><span class="p-english">National Central University.</span> <span class="Chinese">國立中央大學
+                                </span></li>
+                            <li><span class="p-english">Taipei Private Dongshan High School.</span> <span
+                                    class="Chinese">私立東山高級中學 </span></li>
+                        </ul>
+
+                        <h3>Skills</h3>
+                        <hr>
+                        <div class="skill-grid">
+                            <ul>
+                                <li>Photoshop</li>
+                                <li>Illustrator</li>
+                                <li>HTML & CSS</li>
+                                <li>Python</li>
+                            </ul>
+                            <ul>
+                                <li>Verilog</li>
+                                <li>C++</li>
+                                <li>PowerDirector</li>
+                                <li>... and so on</li>
+                            </ul>
+                        </div>
+
+                        <h3>Project</h3>
+                        <hr>
+                        <ul>
+                            <li>1A1B gaming console - Arduino</li>
+                            <li>Plant vs Zombie - Verilog</li>
+                            <li>Wei Studio - HTML & CSS (This Website)</li>
+                            <li>Spice simulation - Python (Continuing...)</li>
+                        </ul>
+                    </div>
+                    <div class="about__information-image">
+                        <img src="images/doodle blur profile_low-quality.png" alt="blur profile image">
+                    </div>
+                </div>
+            </div>
+            <div class="about__contact-me-container cmc">
+                <div class="contactMe">
+                    <div class="marquee">
+                        <h1 class="contactMeH1">Contact me</h1>
+                        <h1 class="contactMeH1">Contact me</h1>
+                        <h1 class="contactMeH1">Contact me</h1>
+                        <h1 class="contactMeH1">Contact me</h1>
+                        <h1 class="contactMeH1">Contact me</h1>
+                        <h1 class="contactMeH1">Contact me</h1>
+                        <h1 class="contactMeH1">Contact me</h1>
+                        <!-- <h1>Contact me</h1> -->
+                    </div>
+
+                    <a class="contactMe contactMeBtn" href="contact.html">Contact me</a>
+                </div>
+
+                <footer class="footer footer_new footer_new-absolute">
+                    <!-- <img src="images/WEI logo.png" alt=""> -->
+                    <div class="copyright">
+                        <p>Copyright © 2023 WEI Studio All Rights Reserved.</p>
+                    </div>
+
+                    <!-- <div class="footer__social-links">
+                    <a href="https://www.facebook.com/profile.php?id=100008737980357" target="_blank"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/will_i_am__chen/?hl=zh-tw" target="_blank"><i
+                            class="fab fa-instagram"></i></a>
+                </div> -->
+
+                </footer>
+
+            </div>
+
+
+
+        </section>
+
+    </main>
+
+
+    <script src="script.js"></script>
+    <script src="contactMe.js"></script>
+
+
+</body>
+
+</html>

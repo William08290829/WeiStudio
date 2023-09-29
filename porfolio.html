@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEI Studio</title>
+    <link rel="short-cut icon" type="x-icon" href="images/WEI logo_cube.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalam&family=Permanent+Marker&family=Rock+Salt&display=swap"
+        rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+
+    <script src="nav.js" defer></script>
+    <script src="smoothscroll.js" defer></script>
+    <script src="porfolioTabs.js" defer></script>
+</head>
+
+<body>
+    <div class="loader"></div>
+    <div class="header" id="header">
+        <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false"></button>
+        <h1>WEI Studio</h1>
+
+        <nav>
+            <div class="logo">
+                <a href="index.html"><img src="images/WEI logo.png" alt="Logo"></a>
+            </div>
+            <ul> <!-- \*導覽頁*\ -->
+                <li><a href="index.html">Home</a></li>
+                <li><a href="porfolio.html">Portfolio</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- bar -->
+    <section id="primary-navigation" data-visible="false" class="navbar primary-navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="porfolio.html">Portfolio</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </section>
+    <!-- bar -->
+
+
+    <main>
+        <div class="title porfolio__title" id="title" data-speed="0.5">
+            <div class="title__slider">
+                <h3>-Portfolio-</h3>
+            </div>
+            <a class="down-btn">
+                <div class="scroll-down"></div>
+            </a>
+        </div>
+
+
+        <div class="porfolio-page">
+            <div class="porfolio-container">
+                <div class="tabs__box">
+                    <button class="tabs__btn active">桌布</button>
+                    <button class="tabs__btn">頭貼</button>
+                    <div class="tabs__line"></div>
+                </div>
+
+                <div class="content__box active">
+                    <div class="gallery">
+                        <div class="column">
+
+                            <div class="wallpaper doodle-patterns_purple-and-yellow_thm">
+                                <a class="click-in" data-fancybox data-caption="Doodle pattern"
+                                    href="images/works/work-17.jpg">
+                                    <img class="wallpaper doodle-patterns_purple-and-yellow_img"
+                                        src="images/works/work-17.jpg" alt="Doodle pattern">
+                                    <div class="wallpaper-overlay"></div>
+                                    <div class="wallpaper-desc">
+                                        <p>Doodle pattern</p>
+                                    </div>
+                                </a>
+                                <!-- POP UP -->
+                                <!-- <div class="picpopup" id="picpopup">
+                                    <div class="picpopup__header">
+                                        <div class="picpopup__author">William Chen</div>
+                                        <button class="picpopup__close-btn">&times;</button>
+                                    </div>
+                                    <div class="picpopup__photo">
+
+                                    </div>
+                                    <div class="picpopup__content">
+
+                                    </div>
+                                </div>
+
+                                <div class="picpopup__overlay">
+
+                                </div> -->
+                                <!-- POP UP -->
+                            </div>
+
+                            <div class="wallpaper conan-distortion_thm">
+                                <a class="click-in" data-fancybox data-caption="Conan distortion"
+                                    href="images/works/work-14.jpg">
+                                    <img src="images/works/work-14.jpg" alt="Conan distortion">
+                                    <div class="wallpaper-overlay"></div>
+                                    <div class="wallpaper-desc">
+                                        <p>Conan distortion</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="wallpaper chainsaw-man_newspaper_thm">
+                                <a class="click-in" data-fancybox data-caption="Chainsaw-man newspaper style"
+                                    href="images/works/work-11.jpg">
+                                    <img src="images/works/work-11.jpg" alt="Chainsaw-man newspaper style">
+                                    <div class="wallpaper-overlay"></div>
+                                    <div class="wallpaper-desc">
+                                        <p>Chainsaw-man newspaper style</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="wallpaper love-is-war_building_thm">
+                                <a class="click-in" data-fancybox data-caption="Love-Is-War building"
+                                    href="images/works/work-8.jpg">
+                                    <img src="images/works/work-8.jpg" alt="love-is-war building">
+                                    <div class="wallpaper-overlay"></div>
+                                    <div class="wallpaper-desc">
+                                        <p>Love-is-war building</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="wallpaper">
+                                <a class="click-in" data-fancybox data-caption="Lycoris-Recoil wall"
+                                    href="images/works/work-5.jpg">
+                                    <img src="images/works/work-5.jpg" alt="Lycoris-Recoil wall">
+                                    <div class="wallpaper-overlay"></div>
+                                    <div class="wallpaper-desc">
+                                        <p>Lycoris-Recoil wall</p>
+                                    </div>
+                                </a>
+
+                            </div>
+                            <div class="wallpaper demon-slayer_3maincharacter">
+                                <a class="click-in" data-fancybox data-caption="Demon-Slayer"
+                                    href="images/works/work-3.jpg">
+                                    <img src="images/works/work-3.jpg" alt="Demon-slayer">
+                                    <div class="wallpaper-overlay"></div>
+                                    <div class="wallpaper-desc">
+                                        <p>Demon-slayer</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="wallpaper naruto_wallpaper_thm">
+                                <a class="click-in" data-fancybox data-caption="Naruto wallpaper"
+                                    href="images/works/work-16.jpg">
+                                    <img src="images/works/work-16.jpg" alt="Naruto">
+                                    <div class="wallpaper-overlay"></div>
+                                    <div class="wallpaper-desc">
+                                        <p>Naruto</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="wallpaper megumin-hat-and-staff_thm">
+                                <a class="click-in" data-fancybox data-caption="Megumin hat & staff"
+                                    href="images/works/work-13.jpg">
+                                    <img src="images/works/work-13.jpg" alt="Megumin hat & staff">
+                                    <div class="wallpaper-overlay"></div>
+                                    <div class="wallpaper-desc">
+                                        <p>Megumin hat & staff</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="wallpaper megumin_newspaper_thm">
+                                <a class="click-in" data-fancybox data-caption="Megumin newspaper style"
+                                    href="images/works/work-10.jpg">
+                                    <img src="images/works/work-10.jpg" alt="Megumin newspaper style">
+                                    <div class="wallpaper-overlay"></div>
+                                    <div class="wallpaper-desc">
+                                        <p>Megumin newspaper style</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="wallpaper love-is-war_character-painting_thm">
+                                <a class="click-in" data-fancybox data-caption="Love-is-war character painting"
+                                    href="images/works/work-7.jpg">
+                                    <img src="images/works/work-7.jpg" alt="Love-is-war character painting">
+                                    <div class="wallpaper-overlay"></div>
+                                    <div class="wallpaper-desc">
+                                        <p>Love-is-war character painting</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="wallpaper">
+                                <a class="click-in" data-fancybox data-caption="Bocchi-the-Rock painting style"
+                                    href="images/works/work-4.jpg">
+                                    <img src="images/works/work-4.jpg" alt="Bocchi-the-Rock painting style">
+                                    <div class="wallpaper-overlay"></div>
+                                    <div class="wallpaper-desc">
+                                        <p>Bocchi-the-Rock painting style</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="wallpaper">
+                                <a class="click-in" data-fancybox data-caption="How-to-train-your-dragon Toothless"
+                                    href="images/works/work-1.jpg">
+                                    <img src="images/works/work-1.jpg" alt="How-to-train-your-dragon toothless">
+                                    <div class="wallpaper-overlay"></div>
+                                    <div class="wallpaper-desc">
+                                        <p>How-to-train-your-dragon toothless</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="wallpaper capoo-swimming_thm">
+                                <a class="click-in" data-fancybox data-caption="Capoo swimming"
+                                    href="images/works/work-15.jpg">
+                                    <img src="images/works/work-15.jpg" alt="Capoo swimming">
+                                    <div class="wallpaper-overlay"></div>
+                                    <div class="wallpaper-desc">
+                                        <p>Capoo swimming</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="wallpaper">
+                                <a class="click-in" data-fancybox data-caption="Megumin magic staff"
+                                    href="images/works/work-12.jpg">
+                                    <img src="images/works/work-12.jpg" alt="Megumin magic staff">
+                                    <div class="wallpaper-overlay"></div>
+                                    <div class="wallpaper-desc">
+                                        <p>Megumin magic staff</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="wallpaper">
+                                <a class="click-in" data-fancybox data-caption="Oshi-no-Ko Libra"
+                                    href="images/works/work-9.jpg">
+                                    <img src="images/works/work-9.jpg" alt="Oshi-no-Ko Libra">
+                                    <div class="wallpaper-overlay"></div>
+                                    <div class="wallpaper-desc">
+                                        <p>Oshi-no-Ko Libra</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="wallpaper">
+                                <a class="click-in" data-fancybox data-caption="Bocchi-the-Rock Bocchi broken"
+                                    href="images/works/work-6.jpg">
+                                    <img src="images/works/work-6.jpg" alt="Bocchi-the-Rock Bocchi broken">
+                                    <div class="wallpaper-overlay"></div>
+                                    <div class="wallpaper-desc">
+                                        <p>Bocchi-the-Rock Bocchi broken</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="wallpaper">
+                                <a class="click-in" data-fancybox data-caption="Acting Doctor-Strange"
+                                    href="images/works/work-2.jpg">
+                                    <img src="images/works/work-2.jpg" alt="Acting Doctor-Strange">
+                                    <div class="wallpaper-overlay"></div>
+                                    <div class="wallpaper-desc">
+                                        <p>Acting Doctor-Strange</p>
+                                    </div>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content__box">
+                    <section class="avatar">
+                        <div class="avatar-box">
+                            <div class="single-avatar">
+                                <img src="images/works/profile picture/head-11.png" alt="brand patterns">
+                            </div>
+                            <div class="single-avatar">
+                                <img src="images/works/profile picture/head-10.png" alt="work-2">
+                            </div>
+                            <div class="single-avatar">
+                                <img src="images/works/profile picture/head-9.png" alt="work-3">
+                            </div>
+                            <div class="single-avatar">
+                                <img src="images/works/profile picture/head-8.png" alt="work-4">
+                            </div>
+                            <div class="single-avatar">
+                                <img src="images/works/profile picture/head-7.png" alt="work-4">
+                            </div>
+                            <div class="single-avatar">
+                                <img src="images/works/profile picture/head-6.png" alt="work-4">
+                            </div>
+                            <div class="single-avatar">
+                                <img src="images/works/profile picture/head-5.png" alt="work-4">
+                            </div>
+                            <div class="single-avatar">
+                                <img src="images/works/profile picture/head-4.png" alt="work-4">
+                            </div>
+                            <div class="single-avatar">
+                                <img src="images/works/profile picture/head-3.png" alt="work-4">
+                            </div>
+                            <div class="single-avatar">
+                                <img src="images/works/profile picture/head-2.png" alt="work-4">
+                            </div>
+                            <div class="single-avatar">
+                                <img src="images/works/profile picture/head-1.png" alt="work-4">
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+
+            <footer class="footer footer_new">
+                <!-- <img src="images/WEI logo.png" alt=""> -->
+                <div class="copyright">
+                    <p>Copyright © 2023 WEI Studio All Rights Reserved.</p>
+                </div>
+
+                <!-- <div class="footer__social-links">
+                <a href="https://www.facebook.com/profile.php?id=100008737980357" target="_blank"><i
+                        class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/will_i_am__chen/?hl=zh-tw" target="_blank"><i
+                        class="fab fa-instagram"></i></a>
+            </div> -->
+
+            </footer>
+
+        </div>
+
+    </main>
+
+
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
