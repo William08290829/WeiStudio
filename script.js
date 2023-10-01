@@ -1,5 +1,5 @@
 function revealFunction() {
-    window.sr = ScrollReveal({
+    const sr = ScrollReveal({
         duration: "1350",
         distance: '250px',
         easing: 'ease'
@@ -91,8 +91,54 @@ function revealFunction() {
     });
 
 }
+
+function revealFunction_greetingGreenBg(){
+    const sr1 = ScrollReveal({
+        duration: "3000",
+        distance: '350px',
+        easing: 'ease'
+    });
+
+    sr1.reveal('.about__greetingGreenBg', {
+        origin: 'left',
+        reset: false,
+        delay: 2000,
+        opacity: 1
+    });
+}
+
+function revealFunction_greeting(){
+    const sr1 = ScrollReveal({
+        duration: "2500",
+        distance: '300px',
+        easing: 'ease',
+        opacity: 1
+    });
+ 
+    sr1.reveal('.about__greetingOrangeBg', {
+        origin: 'left',
+        reset: false,
+        delay: 2000,
+        opacity: 1
+    });
+    sr1.reveal('.about__greeting', {
+        origin: 'right',
+        reset: false,
+        delay: 2000,
+        opacity: 1
+    });
+    sr1.reveal('.about__greeting h3', {
+        origin: 'right',
+        reset: false,
+        delay: 2000,
+        opacity: 1
+    });
+}
+
 window.addEventListener('load', () => {
     revealFunction();
+    revealFunction_greetingGreenBg();
+    revealFunction_greeting();
 })
 
 //Hide Header

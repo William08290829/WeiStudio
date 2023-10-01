@@ -62,6 +62,10 @@ main{
     }
 }
 
+.slider {
+    overflow: hidden;
+}
+
 /* HEADER */
 /* ------------------------------------------------------------------- */
 .header {
@@ -903,7 +907,7 @@ main{
     background-size: cover;
 }
 
-.about__greeting {
+.about__greeting-container {
     height: 20vh;
     position: relative;
     /* display: flex; */
@@ -911,37 +915,58 @@ main{
     /* margin: auto; */
 }
 
-.about__greeting-bg {
+.about__greetingGreenBg-slider {
     position: absolute;
     bottom: 0px;
-    margin-left: 15vw;
+    margin-left: 10vw;
     font-size: 35px;
     /* color: var(--backgroud-color); */
 
-    background-color: #F0BE5D;
+    padding: 0 0 4px 0;
+    /* box-shadow: 5px 5px 0 var(--header-backgroud-color); */
+}
+.about__greetingGreenBg {
+    position: absolute;
+    width: 300px;
+    height: 54px;
     padding: 10px;
-    box-shadow: 5px 5px 0 var(--header-backgroud-color);
+    left: calc(50px + 13px);
+    top: 4px;
+    background-color: var(--header-backgroud-color);
+}
+.about__greeting-slider {
+    margin-left: 5px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.about__greetingOrangeBg {
+    position: relative;
+    padding: 10px;
+    height: 100%;
+    background-color: var(--header-button-color);
 }
 
-.about__greeting-bg h3 {
-    background-color: #F0BE5D;
+.about__greeting h3 {
     overflow: hidden;
     position: relative;
+    color: var(--backgroud-color);
+    font-style: italic;
+    padding-right: 4px;
     opacity: 0;
+    opacity: 1;
 
-    border-right: 3px solid transparent;
+    /* border-right: 3px solid transparent; */
     width: 100%;
     white-space: nowrap;
-
 }
-.about__greeting-bg .typing{
+/* .about__greeting .typing{
     animation:
         typing 2s steps(7),
         cursor .4s step-end 13 alternate,
         typing-delay 0s 1 forwards;
 
     animation-delay: 500ms;
-}
+} */
 
 /* cursor blinking */
 @keyframes cursor {
@@ -1143,11 +1168,11 @@ main{
     display: block;
     letter-spacing: 5px;
 
-    animation: marq 2000ms linear infinite;
+    animation: moving-from-left 2000ms linear infinite;
     /* transform: all 0.5 ease; */
 }
 
-@keyframes marq {
+@keyframes moving-from-left {
     0%{
         transform: translateX(0);
     }
@@ -1288,7 +1313,7 @@ main{
     background-color: var(--backgroud-color);
     padding: 15px;
     font-size: 18px;
-    font-family: var(--p-font);
+    font-family: var(--p-font), var(--chinese);
     border-radius: 3px;
 
     transition: 0.5s
