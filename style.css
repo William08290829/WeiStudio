@@ -909,6 +909,7 @@ main{
 
 .about__greeting-container {
     height: 20vh;
+    min-height: 130px;
     position: relative;
     /* display: flex; */
     /* align-items: center; */
