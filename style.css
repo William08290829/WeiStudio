@@ -949,7 +949,7 @@ main{
 .about__greeting h3 {
     overflow: hidden;
     position: relative;
-    color: var(--backgroud-color);
+    color: #363535;
     font-style: italic;
     padding-right: 4px;
     opacity: 0;
@@ -1509,6 +1509,27 @@ main{
         grid-template-columns: repeat(1, 1fr);
         gap: 1rem
     }
+
+    .about__greeting-container {
+        display: flex;
+        justify-content: center;
+    }
+    .about__greetingGreenBg-slider {
+        position: relative;
+        left: 0;
+        margin-left: 0;
+
+        display: flex;
+        justify-content: center;
+        align-items: end;
+    }
+    .about__greetingGreenBg {
+        top: 60px;
+        left: 57px
+    }
+    .about__greeting-slider {
+        margin: 0;
+    } 
     
 }
 
@@ -1678,10 +1699,14 @@ main{
     .about__information-image {
         grid-area: 1/1/2/2;
     }
+    
+    .about__profile-image {
+        margin-top: 40px;
+    }
 
     .about__profile-image img,
     .about__information-image img {
-        width: 250px;
+        width: 280px;
     }
     .about__contact-me-container{
         background-image: none;
@@ -1846,5 +1871,17 @@ main{
         background-image: url(images/close.png);
     }
 
+    
 
+
+}
+@media (max-width: 480px){
+    .about__greeting h3 {
+        font-size: 25px;
+    }
+    .about__greetingGreenBg {
+        width: 185px;
+        height: 30px;
+        top: 84px;
+    }
 }
