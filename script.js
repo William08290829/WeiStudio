@@ -1,5 +1,5 @@
 function revealFunction() {
-    window.sr = ScrollReveal({
+    const sr = ScrollReveal({
         duration: "1350",
         distance: '250px',
         easing: 'ease'
@@ -11,9 +11,14 @@ function revealFunction() {
         reset: false,
         delay: 500
     });
+    sr.reveal('.sloganbg', {
+        origin: 'left',
+        reset: false,
+        delay: 1500
+    });
     sr.reveal('.news a', {
         origin: 'bottom',
-        reset: true,
+        reset: false,
         delay: 500
     });
 
@@ -23,8 +28,8 @@ function revealFunction() {
         reset: false,
         delay: 500
     });
-    sr.reveal('.about__information-container', {
-        origin: 'right',
+    sr.reveal('.about__information-image img', {
+        origin: 'left',
         reset: false,
         delay: 500
     });
@@ -42,7 +47,7 @@ function revealFunction() {
     sr.reveal('.title h3', {
         origin: 'bottom',
         reset: false,
-        delay: 500
+        delay: 300
     });
     sr.reveal('.contact__subtitle', {
         origin: 'bottom',
@@ -73,16 +78,10 @@ function revealFunction() {
     });
 
 
-    
-    
-    sr.reveal(".contact__social-link", {
-        origin: "bottom",
-        reset: false,
-        delay: 500
-    });
     sr.reveal(".contact__row-social-link a", {
+        origin: 'top',
         interval: 200,
-        delay: 500
+        delay: 2000
     });
 
     sr.reveal(".about__introduction-content .highlight::after", {
@@ -91,14 +90,61 @@ function revealFunction() {
     });
 
 }
+
+function revealFunction_greetingGreenBg(){
+    const sr1 = ScrollReveal({
+        duration: "3000",
+        distance: '350px',
+        easing: 'ease'
+    });
+
+    sr1.reveal('.about__greetingGreenBg', {
+        origin: 'left',
+        reset: false,
+        delay: 2000,
+        opacity: 1
+    });
+}
+
+function revealFunction_greeting(){
+    const sr1 = ScrollReveal({
+        duration: "2500",
+        distance: '300px',
+        easing: 'ease',
+        opacity: 1
+    });
+ 
+    sr1.reveal('.about__greetingOrangeBg', {
+        origin: 'left',
+        reset: false,
+        delay: 2000,
+        opacity: 1
+    });
+    sr1.reveal('.about__greeting', {
+        origin: 'right',
+        reset: false,
+        delay: 2000,
+        opacity: 1
+    });
+    sr1.reveal('.about__greeting h3', {
+        origin: 'right',
+        reset: false,
+        delay: 2000,
+        opacity: 1
+    });
+}
+
 window.addEventListener('load', () => {
     revealFunction();
+    revealFunction_greetingGreenBg();
+    revealFunction_greeting();
 })
 
 //Hide Header
 var lastScrollTop = 0;
 header = document.getElementById("header")
 window.addEventListener("scroll", function () {
+    // console.log(isModalActive);
     var scrollTop = window.scrollY || document.documentElement.scrollTop;
     if (scrollTop > lastScrollTop) {
         header.style.top = "-80px";
@@ -108,10 +154,13 @@ window.addEventListener("scroll", function () {
     lastScrollTop = scrollTop;
 });
 
+
+
 //FancyBox
 Fancybox.bind('[data-fancybox="gallery"]', {
     //
 });
+jQuery.noConflict();
 $('[data-fancybox]').fancybox({
     buttons: [
         'zoom',

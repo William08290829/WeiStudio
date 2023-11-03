@@ -7,6 +7,7 @@
     <title>WEI Studio</title>
     <link rel="short-cut icon" type="x-icon" href="images/WEI logo_cube.png">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="modal.css">
     <link rel="stylesheet" type="text/css"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -32,6 +33,12 @@
     <script src="nav.js" defer></script>
     <script src="smoothscroll.js" defer></script>
     <script src="porfolioTabs.js" defer></script>
+
+    <script src="http://unpkg.com/jquery"></script>
+    <script src="modal.js" defer></script>
+
+
+
 </head>
 
 <body>
@@ -86,42 +93,22 @@
 
                 <div class="content__box active">
                     <div class="gallery">
-                        <div class="column">
+                        <div class="column"><!--data-fancybox data-caption="Acting Doctor-Strange-->
 
                             <div class="wallpaper doodle-patterns_purple-and-yellow_thm">
-                                <a class="click-in" data-fancybox data-caption="Doodle pattern"
-                                    href="images/works/work-17.jpg">
+                                <a class="click-in" data-modal-target="#modal-16">
                                     <img class="wallpaper doodle-patterns_purple-and-yellow_img"
-                                        src="images/works/work-17.jpg" alt="Doodle pattern">
+                                        src="images/works/work-16.jpg" alt="Doodle pattern">
                                     <div class="wallpaper-overlay"></div>
                                     <div class="wallpaper-desc">
                                         <p>Doodle pattern</p>
                                     </div>
                                 </a>
-                                <!-- POP UP -->
-                                <!-- <div class="picpopup" id="picpopup">
-                                    <div class="picpopup__header">
-                                        <div class="picpopup__author">William Chen</div>
-                                        <button class="picpopup__close-btn">&times;</button>
-                                    </div>
-                                    <div class="picpopup__photo">
-
-                                    </div>
-                                    <div class="picpopup__content">
-
-                                    </div>
-                                </div>
-
-                                <div class="picpopup__overlay">
-
-                                </div> -->
-                                <!-- POP UP -->
                             </div>
 
                             <div class="wallpaper conan-distortion_thm">
-                                <a class="click-in" data-fancybox data-caption="Conan distortion"
-                                    href="images/works/work-14.jpg">
-                                    <img src="images/works/work-14.jpg" alt="Conan distortion">
+                                <a class="click-in" data-modal-target="#modal-13">
+                                    <img src="images/works/work-13.jpg" alt="Conan distortion">
                                     <div class="wallpaper-overlay"></div>
                                     <div class="wallpaper-desc">
                                         <p>Conan distortion</p>
@@ -129,52 +116,47 @@
                                 </a>
                             </div>
                             <div class="wallpaper chainsaw-man_newspaper_thm">
-                                <a class="click-in" data-fancybox data-caption="Chainsaw-man newspaper style"
-                                    href="images/works/work-11.jpg">
-                                    <img src="images/works/work-11.jpg" alt="Chainsaw-man newspaper style">
+                                <a class="click-in" data-modal-target="#modal-10">
+                                    <img src="images/works/work-10.jpg" alt="Chainsaw-man newspaper style">
                                     <div class="wallpaper-overlay"></div>
                                     <div class="wallpaper-desc">
-                                        <p>Chainsaw-man newspaper style</p>
+                                        <p>Chainsaw man - newspaper style</p>
                                     </div>
                                 </a>
                             </div>
-                            <div class="wallpaper love-is-war_building_thm">
-                                <a class="click-in" data-fancybox data-caption="Love-Is-War building"
-                                    href="images/works/work-8.jpg">
-                                    <img src="images/works/work-8.jpg" alt="love-is-war building">
+                            <div class="wallpaper love-is-war_character-painting_thm">
+                                <a class="click-in" data-modal-target="#modal-7">
+                                    <img src="images/works/work-7.jpg" alt="Love-is-war character painting">
                                     <div class="wallpaper-overlay"></div>
                                     <div class="wallpaper-desc">
-                                        <p>Love-is-war building</p>
+                                        <p>Love is War - Painting</p>
                                     </div>
                                 </a>
                             </div>
                             <div class="wallpaper">
-                                <a class="click-in" data-fancybox data-caption="Lycoris-Recoil wall"
-                                    href="images/works/work-5.jpg">
-                                    <img src="images/works/work-5.jpg" alt="Lycoris-Recoil wall">
+                                <a class="click-in" data-modal-target="#modal-4">
+                                    <img src="images/works/work-4.jpg" alt="Bocchi-the-Rock painting style">
                                     <div class="wallpaper-overlay"></div>
                                     <div class="wallpaper-desc">
-                                        <p>Lycoris-Recoil wall</p>
+                                        <p>Bocchi the Rock - Painting</p>
                                     </div>
                                 </a>
-
                             </div>
-                            <div class="wallpaper demon-slayer_3maincharacter">
-                                <a class="click-in" data-fancybox data-caption="Demon-Slayer"
-                                    href="images/works/work-3.jpg">
-                                    <img src="images/works/work-3.jpg" alt="Demon-slayer">
+                            <div class="wallpaper">
+                                <a class="click-in" data-modal-target="#modal-2">
+                                    <img src="images/works/work-2.jpg" alt="Acting Doctor-Strange">
                                     <div class="wallpaper-overlay"></div>
                                     <div class="wallpaper-desc">
-                                        <p>Demon-slayer</p>
+                                        <p>Acting Doctor Strange</p>
                                     </div>
                                 </a>
                             </div>
                         </div>
+                        <!-- Column 2 -->
                         <div class="column">
                             <div class="wallpaper naruto_wallpaper_thm">
-                                <a class="click-in" data-fancybox data-caption="Naruto wallpaper"
-                                    href="images/works/work-16.jpg">
-                                    <img src="images/works/work-16.jpg" alt="Naruto">
+                                <a class="click-in" data-modal-target="#modal-15">
+                                    <img src="images/works/work-15.jpg" alt="Naruto">
                                     <div class="wallpaper-overlay"></div>
                                     <div class="wallpaper-desc">
                                         <p>Naruto</p>
@@ -182,9 +164,8 @@
                                 </a>
                             </div>
                             <div class="wallpaper megumin-hat-and-staff_thm">
-                                <a class="click-in" data-fancybox data-caption="Megumin hat & staff"
-                                    href="images/works/work-13.jpg">
-                                    <img src="images/works/work-13.jpg" alt="Megumin hat & staff">
+                                <a class="click-in" data-modal-target="#modal-12">
+                                    <img src="images/works/work-12.jpg" alt="Megumin hat & staff">
                                     <div class="wallpaper-overlay"></div>
                                     <div class="wallpaper-desc">
                                         <p>Megumin hat & staff</p>
@@ -192,94 +173,78 @@
                                 </a>
                             </div>
                             <div class="wallpaper megumin_newspaper_thm">
-                                <a class="click-in" data-fancybox data-caption="Megumin newspaper style"
-                                    href="images/works/work-10.jpg">
-                                    <img src="images/works/work-10.jpg" alt="Megumin newspaper style">
+                                <a class="click-in" data-modal-target="#modal-9">
+                                    <img src="images/works/work-9.jpg" alt="Megumin newspaper style">
                                     <div class="wallpaper-overlay"></div>
                                     <div class="wallpaper-desc">
                                         <p>Megumin newspaper style</p>
                                     </div>
                                 </a>
                             </div>
-                            <div class="wallpaper love-is-war_character-painting_thm">
-                                <a class="click-in" data-fancybox data-caption="Love-is-war character painting"
-                                    href="images/works/work-7.jpg">
-                                    <img src="images/works/work-7.jpg" alt="Love-is-war character painting">
+                            <div class="wallpaper">
+                                <a class="click-in" data-modal-target="#modal-6">
+                                    <img src="images/works/work-6.jpg" alt="Bocchi-the-Rock Bocchi broken">
                                     <div class="wallpaper-overlay"></div>
                                     <div class="wallpaper-desc">
-                                        <p>Love-is-war character painting</p>
+                                        <p>Bocchi the Rock - Broken</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="wallpaper demon-slayer_3maincharacter">
+                                <a class="click-in" data-modal-target="#modal-3">
+                                    <img src="images/works/work-3.jpg" alt="Demon-slayer">
+                                    <div class="wallpaper-overlay"></div>
+                                    <div class="wallpaper-desc">
+                                        <p>Demon Slayer</p>
                                     </div>
                                 </a>
                             </div>
                             <div class="wallpaper">
-                                <a class="click-in" data-fancybox data-caption="Bocchi-the-Rock painting style"
-                                    href="images/works/work-4.jpg">
-                                    <img src="images/works/work-4.jpg" alt="Bocchi-the-Rock painting style">
-                                    <div class="wallpaper-overlay"></div>
-                                    <div class="wallpaper-desc">
-                                        <p>Bocchi-the-Rock painting style</p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="wallpaper">
-                                <a class="click-in" data-fancybox data-caption="How-to-train-your-dragon Toothless"
-                                    href="images/works/work-1.jpg">
+                                <!--data-fancybox data-caption="How-to-train-your-dragon Toothless" href="images/works/work-1.jpg"-->
+                                <a class="click-in" data-modal-target="#modal-1">
                                     <img src="images/works/work-1.jpg" alt="How-to-train-your-dragon toothless">
                                     <div class="wallpaper-overlay"></div>
                                     <div class="wallpaper-desc">
-                                        <p>How-to-train-your-dragon toothless</p>
+                                        <p>How to train your dragon - Toothless</p>
                                     </div>
                                 </a>
                             </div>
                         </div>
+                        <!-- Column 3 -->
                         <div class="column">
                             <div class="wallpaper capoo-swimming_thm">
-                                <a class="click-in" data-fancybox data-caption="Capoo swimming"
-                                    href="images/works/work-15.jpg">
-                                    <img src="images/works/work-15.jpg" alt="Capoo swimming">
+                                <a class="click-in" data-modal-target="#modal-14">
+                                    <img src="images/works/work-14.jpg" alt="Capoo swimming">
                                     <div class="wallpaper-overlay"></div>
                                     <div class="wallpaper-desc">
-                                        <p>Capoo swimming</p>
+                                        <p>Capoo in Pool</p>
                                     </div>
                                 </a>
                             </div>
                             <div class="wallpaper">
-                                <a class="click-in" data-fancybox data-caption="Megumin magic staff"
-                                    href="images/works/work-12.jpg">
-                                    <img src="images/works/work-12.jpg" alt="Megumin magic staff">
+                                <a class="click-in" data-modal-target="#modal-11">
+                                    <img src="images/works/work-11.jpg" alt="Megumin magic staff">
                                     <div class="wallpaper-overlay"></div>
                                     <div class="wallpaper-desc">
-                                        <p>Megumin magic staff</p>
+                                        <p>Megumin's Belongings</p>
                                     </div>
                                 </a>
                             </div>
-                            <div class="wallpaper">
-                                <a class="click-in" data-fancybox data-caption="Oshi-no-Ko Libra"
-                                    href="images/works/work-9.jpg">
-                                    <img src="images/works/work-9.jpg" alt="Oshi-no-Ko Libra">
+                            <div class="wallpaper love-is-war_building_thm">
+                                <a class="click-in" data-modal-target="#modal-8">
+                                    <img src="images/works/work-8.jpg" alt="love-is-war building">
                                     <div class="wallpaper-overlay"></div>
                                     <div class="wallpaper-desc">
-                                        <p>Oshi-no-Ko Libra</p>
+                                        <p>Love is War - Building</p>
                                     </div>
                                 </a>
                             </div>
-                            <div class="wallpaper">
-                                <a class="click-in" data-fancybox data-caption="Bocchi-the-Rock Bocchi broken"
-                                    href="images/works/work-6.jpg">
-                                    <img src="images/works/work-6.jpg" alt="Bocchi-the-Rock Bocchi broken">
+                            <div class="wallpaper lycoris-recoil-floral-wall_thm">
+                                <a class="click-in" data-modal-target="#modal-5">
+                                    <img src="images/works/work-5.jpg" alt="Lycoris-Recoil wall">
                                     <div class="wallpaper-overlay"></div>
                                     <div class="wallpaper-desc">
-                                        <p>Bocchi-the-Rock Bocchi broken</p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="wallpaper">
-                                <a class="click-in" data-fancybox data-caption="Acting Doctor-Strange"
-                                    href="images/works/work-2.jpg">
-                                    <img src="images/works/work-2.jpg" alt="Acting Doctor-Strange">
-                                    <div class="wallpaper-overlay"></div>
-                                    <div class="wallpaper-desc">
-                                        <p>Acting Doctor-Strange</p>
+                                        <p>Lycoris Recoil - Floral Wall</p>
                                     </div>
                                 </a>
                             </div>
@@ -292,37 +257,28 @@
                     <section class="avatar">
                         <div class="avatar-box">
                             <div class="single-avatar">
-                                <img src="images/works/profile picture/head-11.png" alt="brand patterns">
+                                <img src="images/works/profile picture/head_8.png" alt="brand patterns">
                             </div>
                             <div class="single-avatar">
-                                <img src="images/works/profile picture/head-10.png" alt="work-2">
+                                <img src="images/works/profile picture/head_7.png" alt="brand patterns">
                             </div>
                             <div class="single-avatar">
-                                <img src="images/works/profile picture/head-9.png" alt="work-3">
+                                <img src="images/works/profile picture/head_6.png" alt="work-2">
                             </div>
                             <div class="single-avatar">
-                                <img src="images/works/profile picture/head-8.png" alt="work-4">
+                                <img src="images/works/profile picture/head_5.png" alt="work-3">
                             </div>
                             <div class="single-avatar">
-                                <img src="images/works/profile picture/head-7.png" alt="work-4">
+                                <img src="images/works/profile picture/head_4.png" alt="work-4">
                             </div>
                             <div class="single-avatar">
-                                <img src="images/works/profile picture/head-6.png" alt="work-4">
+                                <img src="images/works/profile picture/head_3.png" alt="work-4">
                             </div>
                             <div class="single-avatar">
-                                <img src="images/works/profile picture/head-5.png" alt="work-4">
+                                <img src="images/works/profile picture/head_2.png" alt="work-4">
                             </div>
                             <div class="single-avatar">
-                                <img src="images/works/profile picture/head-4.png" alt="work-4">
-                            </div>
-                            <div class="single-avatar">
-                                <img src="images/works/profile picture/head-3.png" alt="work-4">
-                            </div>
-                            <div class="single-avatar">
-                                <img src="images/works/profile picture/head-2.png" alt="work-4">
-                            </div>
-                            <div class="single-avatar">
-                                <img src="images/works/profile picture/head-1.png" alt="work-4">
+                                <img src="images/works/profile picture/head_1.png" alt="work-4">
                             </div>
                         </div>
                     </section>
@@ -346,11 +302,945 @@
 
         </div>
 
+        <!-- POP UP -->
+        <div class="modal_overlay" id="modal_overlay">
+            <!-- POPUP 16 -->
+            <div class="modal" id="modal-16">
+                <div class="modal-header">
+                    <div class="title"></div>
+                    <button data-close-button class="close-button" title="close">&times;</button>
+                </div>
+
+                <div class="modal-body">
+                    <img class="modal-img" src="/images/works/work-16.jpg">
+                    <div class="img-info">
+                        <div class="img-info__date img-info__Box">
+                            <span class="gray">Date: </span><br> 2023/08
+                        </div>
+                        <div class="img-info__software img-info__Box">
+                            <span class="gray">Software: </span><br> <a href="javascript:void(0)"
+                                title="Adobe Illustrator"><img class="icon" src="/images/icon/illustrator.png"
+                                    alt=""></a>
+                        </div>
+                        <div class="img-info__designFor img-info__Box">
+                            <span class="gray">Design for: </span><br> <a href="javascript:void(0)" title="Website"><img
+                                    class="icon" src="/images/icon/website_icon.png" alt=""></a>
+                        </div>
+                    </div>
+
+                    <div class="img-info-detail">
+                        <ul>
+                            <li> Name: Doodle Patterns</li>
+                            <li id="resolution"> Resolution: Loading...</li>
+                            <li id="mediaType"> Media type: Loading...</li>
+                        </ul>
+                    </div>
+
+                    <div class="modal-relate other-version">
+                        <h3>Other Version</h3>
+                        <div class="relate__wrapper OV_relate__wrapper">
+                            <i id="OV_left" class="fa-solid fa-chevron-left"></i>
+                            <div class="relate__slider otherVersion">
+                                <img class="relate__img doodle-patterns-ov" src="/images/works/brand pattern.jpg"
+                                    alt="img" draggable="false">
+                                <img class="relate__img doodle-patterns-ov"
+                                    src="/images/works/brand pattern_blue-orange.jpg" alt="img" draggable="false">
+                                <img class="relate__img doodle-patterns-ov"
+                                    src="/images/works/brand pattern_pink-green.jpg" alt="img" draggable="false">
+                            </div>
+                            <i id="OV_right" class="fa-solid fa-chevron-right"></i>
+                        </div>
+                        <div class="relate__scrollbar-container">
+                            <div class="relate__scrollbar">
+                                <div class="scrollbar-track">
+                                    <div class="scrollbar-thumb"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal-relate design-resource">
+                        <h3>Design Resource</h3>
+                        <div class="relate__wrapper DR_relate__wrapper">
+                            <i id="DR_left" class="fa-solid fa-chevron-left"></i>
+                            <div class="relate__slider designResource">
+                                <img class="relate__img" src="/images/source/Doodle Patterns source.jpg" alt="img"
+                                    draggable="false">
+                            </div>
+                            <i id="DR_right" class="fa-solid fa-chevron-right"></i>
+                        </div>
+                        <div class="relate__scrollbar-container">
+                            <div class="relate__scrollbar">
+                                <div class="scrollbar-track">
+                                    <div class="scrollbar-thumb"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- POPUP 15 -->
+            <div class="modal" id="modal-15">
+                <div class="modal-header">
+                    <div class="title"></div>
+                    <button data-close-button class="close-button" title="close">&times;</button>
+                </div>
+
+                <div class="modal-body">
+                    <img class="modal-img" src="/images/works/work-15.jpg">
+                    <div class="img-info">
+                        <div class="img-info__date img-info__Box">
+                            <span class="gray">Date: </span><br> 2023/08
+                        </div>
+                        <div class="img-info__software img-info__Box">
+                            <span class="gray">Software: </span><br> <a href="javascript:void(0)"
+                                title="Adobe Photoshop"><img class="icon" src="/images/icon/photoshop.png" alt=""></a>
+                        </div>
+                        <div class="img-info__designFor img-info__Box">
+                            <span class="gray">Design for: </span><br> <a href="javascript:void(0)"
+                                title="Desktop/Laptop"><i class="fa-solid fa-display"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="img-info-detail">
+                        <ul>
+                            <li> Name: Naruto</li>
+                            <li id="resolution"> Resolution: Loading...</li>
+                            <li id="mediaType"> Media type: Loading...</li>
+                        </ul>
+                    </div>
+
+                    <div class="modal-relate design-resource">
+                        <h3>Design Resource</h3>
+                        <div class="relate__wrapper DR_relate__wrapper">
+                            <i id="DR_left" class="fa-solid fa-chevron-left"></i>
+                            <div class="relate__slider designResource">
+                                <img class="relate__img"
+                                    src="https://i.pinimg.com/564x/e9/76/4d/e9764d13b82886e6fac42c7b72c1c81b.jpg"
+                                    alt="img" draggable="false">
+                                <img class="relate__img"
+                                    src="https://i.pinimg.com/564x/65/8f/fa/658ffa26230a854ed970e2cc368c85cd.jpg"
+                                    alt="img" draggable="false">
+                                <img class="relate__img" src="https://photo.16pic.com/00/93/88/16pic_9388442_b.png"
+                                    alt="img" draggable="false">
+                            </div>
+                            <i id="DR_right" class="fa-solid fa-chevron-right"></i>
+                        </div>
+                        <div class="relate__scrollbar-container">
+                            <div class="relate__scrollbar">
+                                <div class="scrollbar-track">
+                                    <div class="scrollbar-thumb"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- POPUP 14 -->
+            <div class="modal" id="modal-14">
+                <div class="modal-header">
+                    <div class="title"></div>
+                    <button data-close-button class="close-button" title="close">&times;</button>
+                </div>
+
+                <div class="modal-body">
+                    <img class="modal-img" src="/images/works/work-14.jpg">
+                    <div class="img-info">
+                        <div class="img-info__date img-info__Box">
+                            <span class="gray">Date: </span><br> 2023/08
+                        </div>
+                        <div class="img-info__software img-info__Box">
+                            <span class="gray">Software: </span><br> <a href="javascript:void(0)"
+                                title="Adobe Photoshop"><img class="icon" src="/images/icon/photoshop.png" alt=""></a>
+                        </div>
+                        <div class="img-info__designFor img-info__Box">
+                            <span class="gray">Design for: </span><br> <a href="javascript:void(0)"
+                                title="Desktop/Laptop"><i class="fa-solid fa-display"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="img-info-detail">
+                        <ul>
+                            <li> Name: Capoo in Pool</li>
+                            <li id="resolution"> Resolution: Loading...</li>
+                            <li id="mediaType"> Media type: Loading...</li>
+                        </ul>
+                    </div>
+
+                    <div class="modal-relate design-resource">
+                        <h3>Design Resource</h3>
+                        <div class="relate__wrapper DR_relate__wrapper">
+                            <i id="DR_left" class="fa-solid fa-chevron-left"></i>
+                            <div class="relate__slider designResource">
+                                <img class="relate__img"
+                                    src="/images/source/capoo source1.jpg"
+                                    alt="img" draggable="false">
+                                <img class="relate__img"
+                                    src="/images/source/capoo source2.jpg"
+                                    alt="img" draggable="false">
+                            </div>
+                            <i id="DR_right" class="fa-solid fa-chevron-right"></i>
+                        </div>
+                        <div class="relate__scrollbar-container">
+                            <div class="relate__scrollbar">
+                                <div class="scrollbar-track">
+                                    <div class="scrollbar-thumb"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- POPUP 13 -->
+            <div class="modal" id="modal-13">
+                <div class="modal-header">
+                    <div class="title"></div>
+                    <button data-close-button class="close-button" title="close">&times;</button>
+                </div>
+
+                <div class="modal-body">
+                    <img class="modal-img" src="/images/works/work-13.jpg">
+                    <div class="img-info">
+                        <div class="img-info__date img-info__Box">
+                            <span class="gray">Date: </span><br> 2023/07
+                        </div>
+                        <div class="img-info__software img-info__Box">
+                            <span class="gray">Software: </span><br> <a href="javascript:void(0)"
+                                title="Adobe Photoshop"><img class="icon" src="/images/icon/photoshop.png" alt=""></a>
+                        </div>
+                        <div class="img-info__designFor img-info__Box">
+                            <span class="gray">Design for: </span><br> <a href="javascript:void(0)"
+                                title="Desktop/Laptop"><i class="fa-solid fa-display"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="img-info-detail">
+                        <ul>
+                            <li> Name: Conan Distortion</li>
+                            <li id="resolution"> Resolution: Loading...</li>
+                            <li id="mediaType"> Media type: Loading...</li>
+                        </ul>
+                    </div>
+
+                    <div class="modal-relate design-resource">
+                        <h3>Design Resource</h3>
+                        <div class="relate__wrapper DR_relate__wrapper">
+                            <i id="DR_left" class="fa-solid fa-chevron-left"></i>
+                            <div class="relate__slider designResource">
+                                <img class="relate__img"
+                                    src="https://i.pinimg.com/564x/ef/0e/6e/ef0e6ea288306438118f69b3f796d8d0.jpg"
+                                    alt="img" draggable="false">
+                                <img class="relate__img"
+                                    src="https://images.unsplash.com/photo-1610337673044-720471f83677?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2572&q=80"
+                                    alt="img" draggable="false">
+                            </div>
+                            <i id="DR_right" class="fa-solid fa-chevron-right"></i>
+                        </div>
+                        <div class="relate__scrollbar-container">
+                            <div class="relate__scrollbar">
+                                <div class="scrollbar-track">
+                                    <div class="scrollbar-thumb"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- POPUP 12 -->
+            <div class="modal" id="modal-12">
+                <div class="modal-header">
+                    <div class="title"></div>
+                    <button data-close-button class="close-button" title="close">&times;</button>
+                </div>
+
+                <div class="modal-body">
+                    <img class="modal-img" src="/images/works/work-12.jpg">
+                    <div class="img-info">
+                        <div class="img-info__date img-info__Box">
+                            <span class="gray">Date: </span><br> 2023/07
+                        </div>
+                        <div class="img-info__software img-info__Box">
+                            <span class="gray">Software: </span><br>
+                            <a href="javascript:void(0)" title="Adobe Photoshop"><img class="icon"
+                                    src="/images/icon/photoshop.png" alt=""></a>
+                            <a href="javascript:void(0)" title="Adobe Illustrator"><img class="icon"
+                                    src="/images/icon/illustrator.png" alt=""></a>
+                        </div>
+                        <div class="img-info__designFor img-info__Box">
+                            <span class="gray">Design for: </span><br> <a href="javascript:void(0)" title="Tablet"><i
+                                    class="fa-solid fa-tablet-screen-button"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="img-info-detail">
+                        <ul>
+                            <li> Name: KonoSuba - Megumin's Belongings Wallpaper</li>
+                            <li id="resolution"> Resolution: Loading...</li>
+                            <li id="mediaType"> Media type: Loading...</li>
+                        </ul>
+                    </div>
+
+                    <div class="img-original">
+                        <p><i class="fa-solid fa-square-check"></i> 100% Original</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- POPUP 11 -->
+            <div class="modal" id="modal-11">
+                <div class="modal-header">
+                    <div class="title"></div>
+                    <button data-close-button class="close-button" title="close">&times;</button>
+                </div>
+
+                <div class="modal-body">
+                    <img class="modal-img" src="/images/works/work-11.jpg">
+                    <div class="img-info">
+                        <div class="img-info__date img-info__Box">
+                            <span class="gray">Date: </span><br> 2023/07
+                        </div>
+                        <div class="img-info__software img-info__Box">
+                            <span class="gray">Software: </span><br>
+                            <a href="javascript:void(0)" title="Adobe Photoshop"><img class="icon"
+                                    src="/images/icon/photoshop.png" alt=""></a>
+                            <a href="javascript:void(0)" title="Adobe Illustrator"><img class="icon"
+                                    src="/images/icon/illustrator.png" alt=""></a>
+                        </div>
+                        <div class="img-info__designFor img-info__Box">
+                            <span class="gray">Design for: </span><br> <a href="javascript:void(0)"
+                                title="Mobile Phone"><i class="fa-solid fa-mobile-screen"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="img-info-detail">
+                        <ul>
+                            <li> Name: KonoSuba - Megumin's Staff Wallpaper</li>
+                            <li id="resolution"> Resolution: Loading...</li>
+                            <li id="mediaType"> Media type: Loading...</li>
+                        </ul>
+                    </div>
+
+                    <div class="img-original">
+                        <p><i class="fa-solid fa-square-check"></i> 100% Original</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- POPUP 10 -->
+            <div class="modal" id="modal-10">
+                <div class="modal-header">
+                    <div class="title"></div>
+                    <button data-close-button class="close-button" title="close">&times;</button>
+                </div>
+
+                <div class="modal-body">
+                    <img class="modal-img" src="/images/works/work-10.jpg">
+                    <div class="img-info">
+                        <div class="img-info__date img-info__Box">
+                            <span class="gray">Date: </span><br> 2023/07
+                        </div>
+                        <div class="img-info__software img-info__Box">
+                            <span class="gray">Software: </span><br> <a href="javascript:void(0)"
+                                title="Adobe Photoshop"><img class="icon" src="/images/icon/photoshop.png" alt=""></a>
+                        </div>
+                        <div class="img-info__designFor img-info__Box">
+                            <span class="gray">Design for: </span><br> <a href="javascript:void(0)"
+                                title="Desktop/Laptop"><i class="fa-solid fa-display"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="img-info-detail">
+                        <ul>
+                            <li> Name: Chainsaw man - Newspaper Wallpaper</li>
+                            <li id="resolution"> Resolution: Loading...</li>
+                            <li id="mediaType"> Media type: Loading...</li>
+                        </ul>
+                    </div>
+
+                    <div class="modal-relate design-resource">
+                        <h3>Design Resource</h3>
+                        <div class="relate__wrapper DR_relate__wrapper">
+                            <i id="DR_left" class="fa-solid fa-chevron-left"></i>
+                            <div class="relate__slider designResource">
+                                <img class="relate__img" src="/images/source/chainsaw-man source.jpg" alt="img"
+                                    draggable="false">
+                                <img class="relate__img"
+                                    src="https://texturelabs.org/wp-content/uploads/Texturelabs_Paper_207S.jpg"
+                                    alt="img" draggable="false">
+                                <img class="relate__img"
+                                    src="https://texturelabs.org/wp-content/uploads/Texturelabs_Paper_206S.jpg"
+                                    alt="img" draggable="false">
+                                <img class="relate__img"
+                                    src="https://texturelabs.org/wp-content/uploads/Texturelabs_Paper_205S.jpg"
+                                    alt="img" draggable="false">
+                                <img class="relate__img"
+                                    src="https://texturelabs.org/wp-content/uploads/Texturelabs_Paper_203S.jpg"
+                                    alt="img" draggable="false">
+                            </div>
+                            <i id="DR_right" class="fa-solid fa-chevron-right"></i>
+                        </div>
+                        <div class="relate__scrollbar-container">
+                            <div class="relate__scrollbar">
+                                <div class="scrollbar-track">
+                                    <div class="scrollbar-thumb"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- POPUP 9 -->
+            <div class="modal" id="modal-9">
+                <div class="modal-header">
+                    <div class="title"></div>
+                    <button data-close-button class="close-button" title="close">&times;</button>
+                </div>
+
+                <div class="modal-body">
+                    <img class="modal-img" src="/images/works/work-9.jpg">
+                    <div class="img-info">
+                        <div class="img-info__date img-info__Box">
+                            <span class="gray">Date: </span><br> 2023/07
+                        </div>
+                        <div class="img-info__software img-info__Box">
+                            <span class="gray">Software: </span><br> <a href="javascript:void(0)"
+                                title="Adobe Photoshop"><img class="icon" src="/images/icon/photoshop.png" alt=""></a>
+                        </div>
+                        <div class="img-info__designFor img-info__Box">
+                            <span class="gray">Design for: </span><br> <a href="javascript:void(0)"
+                                title="Desktop/Laptop"><i class="fa-solid fa-display"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="img-info-detail">
+                        <ul>
+                            <li> Name: KonoSuba - Megumin Newspaper Wallpaper</li>
+                            <li id="resolution"> Resolution: Loading...</li>
+                            <li id="mediaType"> Media type: Loading...</li>
+                        </ul>
+                    </div>
+
+                    <div class="modal-relate design-resource">
+                        <h3>Design Resource</h3>
+                        <div class="relate__wrapper DR_relate__wrapper">
+                            <i id="DR_left" class="fa-solid fa-chevron-left"></i>
+                            <div class="relate__slider designResource">
+                                <img class="relate__img" src="/images/source/Megumin_shadow.jpg" alt="img"
+                                    draggable="false">
+                                <img class="relate__img"
+                                    src="https://texturelabs.org/wp-content/uploads/Texturelabs_Paper_207S.jpg"
+                                    alt="img" draggable="false">
+                                <img class="relate__img"
+                                    src="https://texturelabs.org/wp-content/uploads/Texturelabs_Paper_206S.jpg"
+                                    alt="img" draggable="false">
+                                <img class="relate__img"
+                                    src="https://texturelabs.org/wp-content/uploads/Texturelabs_Paper_205S.jpg"
+                                    alt="img" draggable="false">
+                                <img class="relate__img"
+                                    src="https://texturelabs.org/wp-content/uploads/Texturelabs_Paper_203S.jpg"
+                                    alt="img" draggable="false">
+                            </div>
+                            <i id="DR_right" class="fa-solid fa-chevron-right"></i>
+                        </div>
+                        <div class="relate__scrollbar-container">
+                            <div class="relate__scrollbar">
+                                <div class="scrollbar-track">
+                                    <div class="scrollbar-thumb"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- POPUP 8 -->
+            <div class="modal" id="modal-8">
+                <div class="modal-header">
+                    <div class="title"></div>
+                    <button data-close-button class="close-button" title="close">&times;</button>
+                </div>
+
+                <div class="modal-body">
+                    <img class="modal-img" src="/images/works/work-8.jpg">
+                    <div class="img-info">
+                        <div class="img-info__date img-info__Box">
+                            <span class="gray">Date: </span><br> 2023/07
+                        </div>
+                        <div class="img-info__software img-info__Box">
+                            <span class="gray">Software: </span><br> <a href="javascript:void(0)"
+                                title="Adobe Photoshop"><img class="icon" src="/images/icon/photoshop.png" alt=""></a>
+                        </div>
+                        <div class="img-info__designFor img-info__Box">
+                            <span class="gray">Design for: </span><br> <a href="javascript:void(0)" title="Tablet"><i
+                                    class="fa-solid fa-tablet-screen-button"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="img-info-detail">
+                        <ul>
+                            <li> Name: Love is War - Building Wallpaper</li>
+                            <li id="resolution"> Resolution: Loading...</li>
+                            <li id="mediaType"> Media type: Loading...</li>
+                        </ul>
+                    </div>
+
+                    <div class="modal-relate design-resource">
+                        <h3>Design Resource</h3>
+                        <div class="relate__wrapper DR_relate__wrapper">
+                            <i id="DR_left" class="fa-solid fa-chevron-left"></i>
+                            <div class="relate__slider designResource">
+                                <img class="relate__img"
+                                    src="https://images.unsplash.com/photo-1567327800037-7a14a5b5f669?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2533&q=80"
+                                    alt="img" draggable="false">
+                                <img class="relate__img"
+                                    src="https://images.pexels.com/photos/50632/pexels-photo-50632.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                                    alt="img" draggable="false">
+                                <img class="relate__img"
+                                    src="https://img.freepik.com/free-vector/realistic-red-3d-heart-balloons-isolated-transparent-background-air-helium-balloon_90220-702.jpg?w=740&t=st=1697218779~exp=1697219379~hmac=a8655ce5c04ce0eaf30d53e3e93d7f306f4ec08976b867fd6b995d7a3c7d8d38"
+                                    alt="img" draggable="false">
+                            </div>
+                            <i id="DR_right" class="fa-solid fa-chevron-right"></i>
+                        </div>
+                        <div class="relate__scrollbar-container">
+                            <div class="relate__scrollbar">
+                                <div class="scrollbar-track">
+                                    <div class="scrollbar-thumb"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- POPUP 7 -->
+            <div class="modal" id="modal-7">
+                <div class="modal-header">
+                    <div class="title"></div>
+                    <button data-close-button class="close-button" title="close">&times;</button>
+                </div>
+
+                <div class="modal-body">
+                    <img class="modal-img" src="/images/works/work-7.jpg">
+                    <div class="img-info">
+                        <div class="img-info__date img-info__Box">
+                            <span class="gray">Date: </span><br> 2023/07
+                        </div>
+                        <div class="img-info__software img-info__Box">
+                            <span class="gray">Software: </span><br>
+                            <a href="javascript:void(0)" title="Adobe Photoshop"><img class="icon"
+                                    src="/images/icon/photoshop.png" alt=""></a>
+                            <a href="javascript:void(0)" title="Adobe Illustrator"><img class="icon"
+                                    src="/images/icon/illustrator.png" alt=""></a>
+                        </div>
+                        <div class="img-info__designFor img-info__Box">
+                            <span class="gray">Design for: </span><br> <a href="javascript:void(0)" title="Tablet"><i
+                                    class="fa-solid fa-tablet-screen-button"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="img-info-detail">
+                        <ul>
+                            <li> Name: Love is War - Painting Wallpaper</li>
+                            <li id="resolution"> Resolution: Loading...</li>
+                            <li id="mediaType"> Media type: Loading...</li>
+                        </ul>
+                    </div>
+
+                    <div class="img-original">
+                        <p><i class="fa-solid fa-square-check"></i> 100% Original</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- POPUP 6 -->
+            <div class="modal" id="modal-6">
+                <div class="modal-header">
+                    <div class="title"></div>
+                    <button data-close-button class="close-button" title="close">&times;</button>
+                </div>
+
+                <div class="modal-body">
+                    <img class="modal-img" src="/images/works/work-6.jpg">
+                    <div class="img-info">
+                        <div class="img-info__date img-info__Box">
+                            <span class="gray">Date: </span><br> 2023/07
+                        </div>
+                        <div class="img-info__software img-info__Box">
+                            <span class="gray">Software: </span><br> <a href="javascript:void(0)"
+                                title="Adobe Photoshop"><img class="icon" src="/images/icon/photoshop.png" alt=""></a>
+                        </div>
+                        <div class="img-info__designFor img-info__Box">
+                            <span class="gray">Design for: </span><br> <a href="javascript:void(0)"
+                                title="Desktop/Laptop"><i class="fa-solid fa-display"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="img-info-detail">
+                        <ul>
+                            <li> Name: Bocchi the Rock - Broken Bocchi</li>
+                            <li id="resolution"> Resolution: Loading...</li>
+                            <li id="mediaType"> Media type: Loading...</li>
+                        </ul>
+                    </div>
+
+                    <div class="modal-relate design-resource">
+                        <h3>Design Resource</h3>
+                        <div class="relate__wrapper DR_relate__wrapper">
+                            <i id="DR_left" class="fa-solid fa-chevron-left"></i>
+                            <div class="relate__slider designResource">
+                                <img class="relate__img"
+                                    src="https://pbs.twimg.com/media/FlqLI5gWIAIsrTg?format=jpg&name=medium" alt="img"
+                                    draggable="false">
+                            </div>
+                            <i id="DR_right" class="fa-solid fa-chevron-right"></i>
+                        </div>
+                        <div class="relate__scrollbar-container">
+                            <div class="relate__scrollbar">
+                                <div class="scrollbar-track">
+                                    <div class="scrollbar-thumb"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- POPUP 5 -->
+            <div class="modal" id="modal-5">
+                <div class="modal-header">
+                    <div class="title"></div>
+                    <button data-close-button class="close-button" title="close">&times;</button>
+                </div>
+
+                <div class="modal-body">
+                    <img class="modal-img" src="/images/works/work-5.jpg">
+                    <div class="img-info">
+                        <div class="img-info__date img-info__Box">
+                            <span class="gray">Date: </span><br> 2023/06
+                        </div>
+                        <div class="img-info__software img-info__Box">
+                            <span class="gray">Software: </span><br> <a href="javascript:void(0)"
+                                title="Adobe Photoshop"><img class="icon" src="/images/icon/photoshop.png" alt=""></a>
+                        </div>
+                        <div class="img-info__designFor img-info__Box">
+                            <span class="gray">Design for: </span><br> <a href="javascript:void(0)"
+                                title="Desktop/Laptop"><i class="fa-solid fa-display"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="img-info-detail">
+                        <ul>
+                            <li> Name: Lycoris Recoil - Floral Wall Gallery</li>
+                            <li id="resolution"> Resolution: Loading...</li>
+                            <li id="mediaType"> Media type: Loading...</li>
+                        </ul>
+                    </div>
+
+                    <div class="modal-relate other-version">
+                        <h3>Other Version</h3>
+                        <div class="relate__wrapper OV_relate__wrapper">
+                            <div class="relate__slider otherVersion">
+                                <img class="relate__img" src="/images/works/Lycoris_night.jpg" alt="img"
+                                    draggable="false">
+                            </div>
+                        </div>
+                        <div class="relate__scrollbar-container">
+                            <div class="relate__scrollbar">
+                                <div class="scrollbar-track">
+                                    <div class="scrollbar-thumb"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal-relate design-resource">
+                        <h3>Design Resource</h3>
+                        <div class="relate__wrapper DR_relate__wrapper">
+                            <i id="DR_left" class="fa-solid fa-chevron-left"></i>
+                            <div class="relate__slider designResource">
+                                <img class="relate__img"
+                                    src="https://images.unsplash.com/photo-1502809737437-1d85c70dd2ca?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2515&q=80"
+                                    alt="img" draggable="false">
+                                <img class="relate__img"
+                                    src="https://images.unsplash.com/photo-1615595969182-8fff50d3152f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2611&q=80g"
+                                    alt="img" draggable="false">
+                                <img class="relate__img"
+                                    src="https://img.freepik.com/free-photo/dried-pink-peony-flower-beige-background_53876-105959.jpg?w=740&t=st=1697214612~exp=1697215212~hmac=12af44679cd3367ad50e41395e1fa2923a0b0745b6eb1889b5bcfe6877f2db2b"
+                                    alt="img" draggable="false">
+                                <img class="relate__img"
+                                    src="https://i0.wp.com/discoversiloam.com/wp-content/uploads/2023/10/dried-roses-6655566_1280.jpg?w=1280&ssl=1"
+                                    alt="img" draggable="false">
+                                <img class="relate__img"
+                                    src="https://img.freepik.com/free-photo/string-floral-flower-flowers-petal_1339-83.jpg?w=1480&t=st=1697214740~exp=1697215340~hmac=c81c3794638001680f35c6a176e790a6aafef80c72cc5e358e3c0618045ba620"
+                                    alt="img" draggable="false">
+                                <img class="relate__img"
+                                    src="https://previews.123rf.com/images/tokidokiame/tokidokiame2003/tokidokiame200300169/143227579-red-spider-lily.jpg"
+                                    alt="img" draggable="false">
+                                <img class="relate__img"
+                                    src="https://images.unsplash.com/photo-1590794244624-676c7cd5e1b4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2670&q=80"
+                                    alt="img" draggable="false">
+                                <img class="relate__img"
+                                    src="https://i.pinimg.com/564x/46/65/ad/4665adee338aaaf647719d023586074e.jpg"
+                                    alt="img" draggable="false">
+                                <img class="relate__img"
+                                    src="https://www.ikea.com.tw/dairyfarm/tw/images/900/0790075_PE767448_S4.webp"
+                                    alt="img" draggable="false">
+                                <img class="relate__img"
+                                    src="https://media.sketchfab.com/models/f021ceb69f7a479190c89c60f8005974/thumbnails/baaed32a2e024167ada30ca4ea41b6ff/1c107479848141a68b04ca4fb45bfd9a.jpeg"
+                                    alt="img" draggable="false">
+                                <img class="relate__img"
+                                    src="https://truth.bahamut.com.tw/s01/202302/85652c06da0c5986431df99ab8cced3e.JPG"
+                                    alt="img" draggable="false">
+                                <img class="relate__img"
+                                    src="https://www.excitapolonia.pl/files/img/upload/ukm-2000_01.jpg" alt="img"
+                                    draggable="false">
+                                <img class="relate__img"
+                                    src="https://upload.wikimedia.org/wikipedia/commons/5/59/76254Rvariety.jpg"
+                                    alt="img" draggable="false">
+                                <img class="relate__img"
+                                    src="https://i.pinimg.com/564x/8a/a3/f5/8aa3f547f7192e0db7767107e11f0348.jpg"
+                                    alt="img" draggable="false">
+                                <img class="relate__img"
+                                    src="https://img.freepik.com/free-vector/vintage-big-fish-restaurant-instagram-story_23-2149440704.jpg?w=740&t=st=1697214210~exp=1697214810~hmac=342930a4fc482cc7bbd2d64a96c5cf5f242235446e4229f60cf0947b73e34a1c"
+                                    alt="img" draggable="false">
+                                <img class="relate__img"
+                                    src="https://images.unsplash.com/photo-1527352774566-e4916e36c645?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb"
+                                    alt="img" draggable="false">
+                            </div>
+                            <i id="DR_right" class="fa-solid fa-chevron-right"></i>
+                        </div>
+                        <div class="relate__scrollbar-container">
+                            <div class="relate__scrollbar">
+                                <div class="scrollbar-track">
+                                    <div class="scrollbar-thumb"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+
+
+            <!-- POPUP 4 -->
+            <div class="modal" id="modal-4">
+                <div class="modal-header">
+                    <div class="title"></div>
+                    <button data-close-button class="close-button" title="close">&times;</button>
+                </div>
+
+                <div class="modal-body">
+                    <img class="modal-img" src="/images/works/work-4.jpg">
+                    <div class="img-info">
+                        <div class="img-info__date img-info__Box">
+                            <span class="gray">Date: </span><br> 2023/02
+                        </div>
+                        <div class="img-info__software img-info__Box">
+                            <span class="gray">Software: </span><br>
+                            <a href="javascript:void(0)" title="Adobe Photoshop"><img class="icon"
+                                    src="/images/icon/photoshop.png" alt=""></a>
+                        </div>
+                        <div class="img-info__designFor img-info__Box">
+                            <span class="gray">Design for: </span><br> <a href="javascript:void(0)" title="Tablet"><i
+                                    class="fa-solid fa-tablet-screen-button"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="img-info-detail">
+                        <ul>
+                            <li> Name: Bocchi the Rock - Painting Wallpaper</li>
+                            <li id="resolution"> Resolution: Loading...</li>
+                            <li id="mediaType"> Media type: Loading...</li>
+                        </ul>
+                    </div>
+
+                    <div class="img-original">
+                        <p><i class="fa-solid fa-square-check"></i> 100% Original</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- POPUP 3 -->
+            <div class="modal" id="modal-3">
+                <div class="modal-header">
+                    <div class="title"></div>
+                    <button data-close-button class="close-button" title="close">&times;</button>
+                </div>
+
+                <div class="modal-body">
+                    <img class="modal-img" src="/images/works/work-3.jpg">
+                    <div class="img-info">
+                        <div class="img-info__date img-info__Box">
+                            <span class="gray">Date: </span><br> 2022/08
+                        </div>
+                        <div class="img-info__software img-info__Box">
+                            <span class="gray">Software: </span><br> <a href="javascript:void(0)"
+                                title="Adobe Photoshop"><img class="icon" src="/images/icon/photoshop.png" alt=""></a>
+                        </div>
+                        <div class="img-info__designFor img-info__Box">
+                            <span class="gray">Design for: </span><br> <a href="javascript:void(0)"
+                                title="Desktop/Laptop"><i class="fa-solid fa-display"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="img-info-detail">
+                        <ul>
+                            <li> Name: Demon Slayer - Gazing at the Crimson Sky</li>
+                            <li id="resolution"> Resolution: Loading...</li>
+                            <li id="mediaType"> Media type: Loading...</li>
+                        </ul>
+                    </div>
+
+                    <div class="modal-relate design-resource">
+                        <h3>Design Resource</h3>
+                        <div class="relate__wrapper DR_relate__wrapper">
+                            <i id="DR_left" class="fa-solid fa-chevron-left"></i>
+                            <div class="relate__slider designResource">
+                                <img class="relate__img"
+                                    src="https://pbs.twimg.com/media/EVWtJuYVAAMlJFC?format=jpg&name=large" alt="img"
+                                    draggable="false">
+                            </div>
+                            <i id="DR_right" class="fa-solid fa-chevron-right"></i>
+                        </div>
+                        <div class="relate__scrollbar-container">
+                            <div class="relate__scrollbar">
+                                <div class="scrollbar-track">
+                                    <div class="scrollbar-thumb"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- POPUP 2 -->
+            <div class="modal" id="modal-2">
+                <div class="modal-header">
+                    <div class="title"></div>
+                    <button data-close-button class="close-button" title="close">&times;</button>
+                </div>
+
+                <div class="modal-body">
+                    <img class="modal-img" src="/images/works/work-2.jpg">
+                    <div class="img-info">
+                        <div class="img-info__date img-info__Box">
+                            <span class="gray">Date: </span><br> 2022/07
+                        </div>
+                        <div class="img-info__software img-info__Box">
+                            <span class="gray">Software: </span><br> <a href="javascript:void(0)"
+                                title="Adobe Photoshop"><img class="icon" src="/images/icon/photoshop.png" alt=""></a>
+                        </div>
+                        <div class="img-info__designFor img-info__Box">
+                            <span class="gray">Design for: </span><br> <a href="javascript:void(0)"
+                                title="Desktop/Laptop"><i class="fa-solid fa-display"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="img-info-detail">
+                        <ul>
+                            <li> Name: Acting Doctor Strange</li>
+                            <li id="resolution"> Resolution: Loading...</li>
+                            <li id="mediaType"> Media type: Loading...</li>
+                        </ul>
+                    </div>
+
+                    <div class="modal-relate design-resource">
+                        <h3>Design Resource</h3>
+                        <div class="relate__wrapper DR_relate__wrapper">
+                            <i id="DR_left" class="fa-solid fa-chevron-left"></i>
+                            <div class="relate__slider designResource">
+                                <img class="relate__img"
+                                    src="https://en.idei.club/uploads/posts/2023-06/1686049286_en-idei-club-p-doctor-strange-magic-dizain-instagram-67.jpg"
+                                    alt="img" draggable="false">
+                                <img class="relate__img"
+                                    src="https://images.unsplash.com/photo-1502085026219-54ac00e06fd9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2472&q=80"
+                                    alt="img" draggable="false">
+                            </div>
+                            <i id="DR_right" class="fa-solid fa-chevron-right"></i>
+                        </div>
+                        <div class="relate__scrollbar-container">
+                            <div class="relate__scrollbar">
+                                <div class="scrollbar-track">
+                                    <div class="scrollbar-thumb"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- POPUP 1 -->
+            <div class="modal" id="modal-1">
+                <div class="modal-header">
+                    <div class="title"></div>
+                    <button data-close-button class="close-button" title="close">&times;</button>
+                </div>
+
+                <div class="modal-body">
+                    <img class="modal-img" src="/images/works/work-1.jpg">
+                    <div class="img-info">
+                        <div class="img-info__date img-info__Box">
+                            <span class="gray">Date: </span><br> 2022/03
+                        </div>
+                        <div class="img-info__software img-info__Box">
+                            <span class="gray">Software: </span><br> <a href="javascript:void(0)"
+                                title="Adobe Photoshop"><img class="icon" src="/images/icon/photoshop.png" alt=""></a>
+                        </div>
+                        <div class="img-info__designFor img-info__Box">
+                            <span class="gray">Design for: </span><br> <a href="javascript:void(0)"
+                                title="Mobile Phone"><i class="fa-solid fa-mobile-screen"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="img-info-detail">
+                        <ul>
+                            <li> Name: How to train your dragon - Toothless Wallpaper</li>
+                            <li id="resolution"> Resolution: Loading...</li>
+                            <li id="mediaType"> Media type: Loading...</li>
+                        </ul>
+                    </div>
+
+                    <div class="modal-relate design-resource">
+                        <h3>Design Resource</h3>
+                        <div class="relate__wrapper DR_relate__wrapper">
+                            <i id="DR_left" class="fa-solid fa-chevron-left"></i>
+                            <div class="relate__slider designResource">
+                                <img class="relate__img"
+                                    src="https://64.media.tumblr.com/b8143d9412d2188984712437d4ea7f21/tumblr_nbchfmbsAk1sdwsrao1_500.jpg"
+                                    alt="img" draggable="false">
+                                <img class="relate__img" src="https://cutewallpaper.org/28x/afapzsi4n/3256429950.jpg"
+                                    alt="img" draggable="false">
+
+                            </div>
+                            <i id="DR_right" class="fa-solid fa-chevron-right"></i>
+                        </div>
+                        <div class="relate__scrollbar-container">
+                            <div class="relate__scrollbar">
+                                <div class="scrollbar-track">
+                                    <div class="scrollbar-thumb"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        </div><!--overlay-->
+        <!-- POP UP -->
     </main>
-
-
-
-
     <script src="script.js"></script>
 
 </body>

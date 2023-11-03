@@ -7,6 +7,7 @@
     <title>WEI Studio</title>
     <link rel="short-cut icon" type="x-icon" href="images/WEI logo_cube.png">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="modal.css">
     <link rel="stylesheet" type="text/css"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -29,11 +30,12 @@
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
-        integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
     <script src="nav.js" defer></script>
+    <!-- <script src="smoothscroll.js" defer></script> -->
+    <script src="porfolioTabs.js" defer></script>
+
+    <script src="http://unpkg.com/jquery"></script>
+    <!-- <script src="modal.js" defer></script> -->
 </head>
 
 <body>
@@ -75,10 +77,12 @@
                 <div class="slider">
                     <h2>#WEI <br>Studio</h2>
                 </div>
-
-                <div class="sloganbg">
-                    <p>"每個作品，都是一段故事"</p>
-                </div>
+                <div class="sloganbg__slider">
+                    <div class="sloganbg">
+                        <p>&nbsp;"每個作品，都是一段故事"&nbsp;</p>
+                        <!-- <p>&nbsp;Graphic / Website / UI.UX Design&nbsp;</p> -->
+                    </div>
+                </div>                  
 
                 <div>
                     <a href="porfolio.html" class="more">瞭解更多</a>

@@ -1,6 +1,6 @@
 // 获取要观察的元素
 var highlightElement = document.querySelectorAll('.highlight');
-var greetingElement = document.querySelector(".about__greeting-bg h3");
+// var greetingElement = document.querySelector(".about__greeting-bg h3");
 
 // // 创建一个 Intersection Observer
 // var observer = new IntersectionObserver(function(entries) {
@@ -20,18 +20,18 @@ highlightElement.forEach(function(element) {
     const observerHighlight = new IntersectionObserver(entries => {
       entries.forEach(entry => {
         entry.target.classList.toggle("show-after", entry.isIntersecting);
-      });
+      }); 
     }, { threshold: 1 });
   
     observerHighlight.observe(element);
   });
 
-const observerGreeting = new IntersectionObserver(entries =>{
-    entries.forEach(entry =>{
-       if(entry.isIntersecting){
-        greetingElement.classList.add('typing')
-       }
-    })
-}, { threshold: 1 });
+// const observerGreeting = new IntersectionObserver(entries =>{
+//     entries.forEach(entry =>{
+//        if(entry.isIntersecting){
+//         greetingElement.classList.add('typing')
+//        }
+//     })
+// }, { threshold: 1 });
 
-observerGreeting.observe(greetingElement);
+// observerGreeting.observe(greetingElement);
