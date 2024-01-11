@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
+
     <title>WEI Studio</title>
     <link rel="short-cut icon" type="x-icon" href="images/WEI logo_cube.png">
     <link rel="stylesheet" href="style.css">
@@ -30,6 +32,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
 
     <script src="smoothscroll.js" defer></script>
+    <script src="http://unpkg.com/jquery"></script>
     <script src="nav.js" defer></script>
 
 </head>
@@ -128,9 +131,9 @@
             </div>
 
             <section class="contact__social-link">
-                <div class="contact__link-title">
+                <!-- <div class="contact__link-title">
                     <h3>-Social Links-</h3>
-                </div>
+                </div> -->
 
                 <div class="contact__row-social-link">
                     <a href="https://www.facebook.com/profile.php?id=100008737980357" target="_blank"><i
@@ -143,8 +146,22 @@
                             class="fa-brands fa-linkedin-in"></i></a>
                 </div>
 
+                <footer class="footer footer_new footer_new-contact contact__footer">
+                    <!-- <img src="images/WEI logo.png" alt=""> -->
+                    <div class="copyright">
+                        <p>Copyright © 2023 WEI Studio All Rights Reserved.</p>
+                    </div>
+
+                </footer>
+                
             </section>
+
+
+        
+        
+        
         </div>
+        
         <!-- <section class="contact__qrcode">
             <div>
                 <img src="" alt="LINE QRcode">
@@ -155,21 +172,10 @@
                 <h3>intsa.</h3>
             </div>
         </section> -->
+
+
+        
     </main>
-
-    <footer class="footer footer_new footer_new-contact">
-        <!-- <img src="images/WEI logo.png" alt=""> -->
-        <div class="copyright">
-            <p>Copyright © 2023 WEI Studio All Rights Reserved.</p>
-        </div>
-
-        <!-- <div class="footer__social-links">
-            <a href="https://www.facebook.com/profile.php?id=100008737980357" target="_blank"><i
-                    class="fab fa-facebook-f"></i></a>
-            <a href="https://www.instagram.com/will_i_am__chen/?hl=zh-tw" target="_blank"><i
-                    class="fab fa-instagram"></i></a>
-        </div> -->
-    </footer>
 
     <script src="script.js"></script>
 

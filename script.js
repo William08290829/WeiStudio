@@ -11,9 +11,14 @@ function revealFunction() {
         reset: false,
         delay: 500
     });
+    sr.reveal('.sloganbg', {
+        origin: 'left',
+        reset: false,
+        delay: 1500
+    });
     sr.reveal('.news a', {
         origin: 'bottom',
-        reset: true,
+        reset: false,
         delay: 500
     });
 
@@ -23,8 +28,8 @@ function revealFunction() {
         reset: false,
         delay: 500
     });
-    sr.reveal('.about__information-container', {
-        origin: 'right',
+    sr.reveal('.about__information-image img', {
+        origin: 'left',
         reset: false,
         delay: 500
     });
@@ -42,7 +47,7 @@ function revealFunction() {
     sr.reveal('.title h3', {
         origin: 'bottom',
         reset: false,
-        delay: 500
+        delay: 300
     });
     sr.reveal('.contact__subtitle', {
         origin: 'bottom',
@@ -73,16 +78,10 @@ function revealFunction() {
     });
 
 
-    
-    
-    sr.reveal(".contact__social-link", {
-        origin: "bottom",
-        reset: false,
-        delay: 500
-    });
     sr.reveal(".contact__row-social-link a", {
+        origin: 'top',
         interval: 200,
-        delay: 500
+        delay: 300
     });
 
     sr.reveal(".about__introduction-content .highlight::after", {
@@ -145,6 +144,7 @@ window.addEventListener('load', () => {
 var lastScrollTop = 0;
 header = document.getElementById("header")
 window.addEventListener("scroll", function () {
+    // console.log(isModalActive);
     var scrollTop = window.scrollY || document.documentElement.scrollTop;
     if (scrollTop > lastScrollTop) {
         header.style.top = "-80px";
@@ -154,10 +154,13 @@ window.addEventListener("scroll", function () {
     lastScrollTop = scrollTop;
 });
 
+
+
 //FancyBox
 Fancybox.bind('[data-fancybox="gallery"]', {
     //
 });
+jQuery.noConflict();
 $('[data-fancybox]').fancybox({
     buttons: [
         'zoom',
