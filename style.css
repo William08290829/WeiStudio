@@ -731,7 +731,7 @@ main {
     overflow: hidden;
     border-radius: 2px;
     box-shadow: 5px 5px 5px #bdbdbd;
-    background-color: #3c6d7928;
+    background-color: #9d9d9dca;
     position: relative;
 }
 
@@ -739,9 +739,23 @@ main {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: center;
 
     /* transform: scale(1); */
     overflow: hidden;
+}
+
+.blur-loading {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.blur-loading.loaded > img {
+    opacity: 1;
+}
+.blur-loading > img {
+    opacity: 0;
+    transition: opacity 200ms ease-in-out;
 }
 
 .wallpaper-overlay {
@@ -750,7 +764,9 @@ main {
     position: absolute;
     top: 0;
     cursor: pointer;
-    background-image: linear-gradient(#00000000, #6a8284);
+    /* background-image: linear-gradient(#00000000, #6a8284); */
+    background-color: #6a828483;
+    backdrop-filter: blur(10px);
     opacity: 0;
     transition: 1s;
 }
@@ -758,6 +774,10 @@ main {
 .wallpaper:hover .wallpaper-overlay {
     opacity: 1;
 }
+/* .wallpaper:hover img{
+    opacity: 0;
+    transition: 1s;
+} */
 
 .wallpaper-desc {
     width: 80%;
@@ -773,7 +793,8 @@ main {
     text-align: center;
     font-family: MV Boli;
     color: #ffffff;
-    font-size: 20px;
+    mix-blend-mode: difference;
+    font-size: 25px;
 }
 
 .wallpaper:hover .wallpaper-desc {
@@ -853,6 +874,7 @@ main {
 
 .chainsaw-man_newspaper_thm img {
     transform: scale(1);
+    object-fit: cover;
 }
 
 .megumin_newspaper_thm img {
@@ -1565,7 +1587,7 @@ main {
     position: relative;
     width: 100%;
     display: flex;
-    margin: 30px 0;
+    margin: 10px 0 30px;
 }
 
 .inputBox input,
@@ -1944,6 +1966,9 @@ main {
         flex-direction: column;
         align-items: center;
     }
+    .column {
+        width: 95%;
+    }
 
     /* ------------------------------------------------------------------- */
     /* Porfolio */
@@ -2126,7 +2151,7 @@ main {
     /* Menu */
     .primary-navigation {
         display: flex;
-        justify-content: center;
+        justify-content: flex-end;
         align-items: center;
         position: fixed;
         /* width: 100%; */
@@ -2141,14 +2166,14 @@ main {
         backdrop-filter: blur(1rem);
 
         transform: translateX(100%);
-        transition: transform 350ms ease-out;
+        transition: transform 500ms ease-in;
 
         /* overflow-y: hidden; */
     }
 
     @supports (backdrop-filter: blur(1rem)) {
         .primary-navigation {
-            background-color: hsl(0 0% 0% / 0.1);
+            background-color: #2a353585;
             backdrop-filter: blur(1rem);
         }
     }
@@ -2156,20 +2181,35 @@ main {
     /* if (data-visible="true") */
     .primary-navigation[data-visible="true"] {
         transform: translateX(0%);
+        transition: transform 350ms ease-out;
     }
 
 
     .primary-navigation ul {
+        position: absolute;
         color: var(--backgroud-color);
         font-family: var(--p-font);
-        font-size: 26px;
+        font-size: 32px;
         list-style-type: none;
-        text-align: center;
+        text-align: end;
+        right: 4rem;
+        padding: 0 0 2rem;
+        overflow: hidden;
     }
 
     .primary-navigation li {
         margin: 10px;
+        transform: translateX(-150%);
+        /* 收回去的動畫 */
+        transition: transform 100ms ease;
     }
+    .primary-navigation li[data-visible="true"] {
+        transform: translateX(0);
+        /* 滑出來的動畫 */
+        transition: transform 1000ms ease;
+    }
+    
+
 
     .primary-navigation a {
         text-decoration: none;

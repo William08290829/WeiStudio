@@ -81,7 +81,7 @@ function revealFunction() {
     sr.reveal(".contact__row-social-link a", {
         origin: 'top',
         interval: 200,
-        delay: 2000
+        delay: 300
     });
 
     sr.reveal(".about__introduction-content .highlight::after", {

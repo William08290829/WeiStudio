@@ -110,6 +110,7 @@
   width: auto; height: auto;
   max-height: 75vh;
   max-width: 100%;
+  cursor: pointer;
 }
 
 .modal-body .img-info {
@@ -307,13 +308,38 @@
 
 @media screen and (max-width: 768px){
   .modal_overlay {
-    padding: 30px 0px 30px;
+    padding: 0px 0px 0px;
   }
   .modal {
     width: 100vw;
+    padding: 5px 0px 10px;
+    border-radius:0px;
   }
 
+  
+  
+  /* padding */
+  .modal-header {
+    padding: 10px 20px;
+  }
+  /* .modal-body .modal-img-vertical {
+    max-height: none;
+  } */
   .modal-body .img-info {
+    box-sizing: border-box;
     gap: 20px;
+    padding: 0 20px;
+  }
+  .img-info-detail {
+    box-sizing: border-box;
+    padding: 0 20px;
+  }
+  .modal-relate {
+    box-sizing: border-box;
+    padding: 0 20px;
+  }
+  .img-original {
+    box-sizing: border-box;
+    padding: 0 20px;
   }
 }

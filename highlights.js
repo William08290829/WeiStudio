@@ -16,15 +16,15 @@ var highlightElement = document.querySelectorAll('.highlight');
 // // 开始观察元素
 // observer.observe(highlightElement);
 
-highlightElement.forEach(function(element) {
-    const observerHighlight = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        entry.target.classList.toggle("show-after", entry.isIntersecting);
-      }); 
-    }, { threshold: 1 });
-  
-    observerHighlight.observe(element);
-  });
+highlightElement.forEach(function (element) {
+  const observerHighlight = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      entry.target.classList.toggle("show-after", entry.isIntersecting);
+    });
+  }, { threshold: 1 });
+
+  observerHighlight.observe(element);
+});
 
 // const observerGreeting = new IntersectionObserver(entries =>{
 //     entries.forEach(entry =>{

@@ -38,6 +38,7 @@
 
     <script src="http://unpkg.com/jquery"></script>
     <script src="modal.js" defer></script>
+    <script src="blurLoading.js" defer></script>
 
 
 
@@ -65,10 +66,10 @@
     <!-- bar -->
     <section id="primary-navigation" data-visible="false" class="navbar primary-navigation">
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="porfolio.html">Portfolio</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li data-visible="false"><a href="index.html">Home</a></li>
+            <li data-visible="false"><a href="porfolio.html">Portfolio</a></li>
+            <li data-visible="false"><a href="about.html">About</a></li>
+            <li data-visible="false"><a href="contact.html">Contact</a></li>
         </ul>
     </section>
     <!-- bar -->
@@ -97,10 +98,13 @@
                     <div class="gallery">
                         <div class="column"><!--data-fancybox data-caption="Acting Doctor-Strange-->
 
-                            <div class="wallpaper doodle-patterns_purple-and-yellow_thm">
+                            <div class="wallpaper doodle-patterns_purple-and-yellow_thm ">
                                 <a class="click-in" data-modal-target="#modal-16">
-                                    <img class="wallpaper doodle-patterns_purple-and-yellow_img"
-                                        src="images/works/work-16.jpg" alt="Doodle pattern">
+                                    <div class="blur-loading" style="background-image: url(images/works/work-16_small.jpg)">
+                                        <img class="wallpaper doodle-patterns_purple-and-yellow_img"
+                                        src="images/works/work-16.jpg" alt="Doodle pattern" loading="lazy" />
+                                    </div>
+                                    
                                     <div class="wallpaper-overlay"></div>
                                     <div class="wallpaper-desc">
                                         <p>Doodle pattern</p>
@@ -110,7 +114,7 @@
 
                             <div class="wallpaper conan-distortion_thm">
                                 <a class="click-in" data-modal-target="#modal-13">
-                                    <img src="images/works/work-13.jpg" alt="Conan distortion">
+                                    <img src="images/works/work-13.jpg" alt="Conan distortion" loading="lazy">
                                     <div class="wallpaper-overlay"></div>
                                     <div class="wallpaper-desc">
                                         <p>Conan distortion</p>
@@ -119,7 +123,7 @@
                             </div>
                             <div class="wallpaper chainsaw-man_newspaper_thm">
                                 <a class="click-in" data-modal-target="#modal-10">
-                                    <img src="images/works/work-10.jpg" alt="Chainsaw-man newspaper style">
+                                    <img src="images/works/work-10.jpg" alt="Chainsaw-man newspaper style" loading="lazy">
                                     <div class="wallpaper-overlay"></div>
                                     <div class="wallpaper-desc">
                                         <p>Chainsaw man - newspaper style</p>
@@ -128,25 +132,25 @@
                             </div>
                             <div class="wallpaper love-is-war_character-painting_thm">
                                 <a class="click-in" data-modal-target="#modal-7">
-                                    <img src="images/works/work-7.jpg" alt="Love-is-war character painting">
+                                    <img src="images/works/work-7.jpg" alt="Love-is-war character painting" loading="lazy">
                                     <div class="wallpaper-overlay"></div>
                                     <div class="wallpaper-desc">
-                                        <p>Love is War - Painting</p>
+                                        <p>LoveIsWar - Painting</p>
                                     </div>
                                 </a>
                             </div>
                             <div class="wallpaper">
                                 <a class="click-in" data-modal-target="#modal-4">
-                                    <img src="images/works/work-4.jpg" alt="Bocchi-the-Rock painting style">
+                                    <img src="images/works/work-4.jpg" alt="Bocchi-the-Rock painting style" loading="lazy">
                                     <div class="wallpaper-overlay"></div>
                                     <div class="wallpaper-desc">
-                                        <p>Bocchi the Rock - Painting</p>
+                                        <p>BocchiTheRock - Painting</p>
                                     </div>
                                 </a>
                             </div>
                             <div class="wallpaper">
                                 <a class="click-in" data-modal-target="#modal-2">
-                                    <img src="images/works/work-2.jpg" alt="Acting Doctor-Strange">
+                                    <img src="images/works/work-2.jpg" alt="Acting Doctor-Strange" loading="lazy">
                                     <div class="wallpaper-overlay"></div>
                                     <div class="wallpaper-desc">
                                         <p>Acting Doctor Strange</p>
@@ -158,7 +162,7 @@
                         <div class="column">
                             <div class="wallpaper naruto_wallpaper_thm">
                                 <a class="click-in" data-modal-target="#modal-15">
-                                    <img src="images/works/work-15.jpg" alt="Naruto">
+                                    <img src="images/works/work-15.jpg" alt="Naruto" loading="lazy">
                                     <div class="wallpaper-overlay"></div>
                                     <div class="wallpaper-desc">
                                         <p>Naruto</p>
@@ -167,7 +171,7 @@
                             </div>
                             <div class="wallpaper megumin-hat-and-staff_thm">
                                 <a class="click-in" data-modal-target="#modal-12">
-                                    <img src="images/works/work-12.jpg" alt="Megumin hat & staff">
+                                    <img src="images/works/work-12.jpg" alt="Megumin hat & staff" loading="lazy">
                                     <div class="wallpaper-overlay"></div>
                                     <div class="wallpaper-desc">
                                         <p>Megumin hat & staff</p>
@@ -176,7 +180,7 @@
                             </div>
                             <div class="wallpaper megumin_newspaper_thm">
                                 <a class="click-in" data-modal-target="#modal-9">
-                                    <img src="images/works/work-9.jpg" alt="Megumin newspaper style">
+                                    <img src="images/works/work-9.jpg" alt="Megumin newspaper style" loading="lazy">
                                     <div class="wallpaper-overlay"></div>
                                     <div class="wallpaper-desc">
                                         <p>Megumin newspaper style</p>
@@ -185,16 +189,16 @@
                             </div>
                             <div class="wallpaper">
                                 <a class="click-in" data-modal-target="#modal-6">
-                                    <img src="images/works/work-6.jpg" alt="Bocchi-the-Rock Bocchi broken">
+                                    <img src="images/works/work-6.jpg" alt="Bocchi-the-Rock Bocchi broken" loading="lazy">
                                     <div class="wallpaper-overlay"></div>
                                     <div class="wallpaper-desc">
-                                        <p>Bocchi the Rock - Broken</p>
+                                        <p>BocchiTheRock - Broken</p>
                                     </div>
                                 </a>
                             </div>
                             <div class="wallpaper demon-slayer_3maincharacter">
                                 <a class="click-in" data-modal-target="#modal-3">
-                                    <img src="images/works/work-3.jpg" alt="Demon-slayer">
+                                    <img src="images/works/work-3.jpg" alt="Demon-slayer" loading="lazy">
                                     <div class="wallpaper-overlay"></div>
                                     <div class="wallpaper-desc">
                                         <p>Demon Slayer</p>
@@ -204,10 +208,10 @@
                             <div class="wallpaper">
                                 <!--data-fancybox data-caption="How-to-train-your-dragon Toothless" href="images/works/work-1.jpg"-->
                                 <a class="click-in" data-modal-target="#modal-1">
-                                    <img src="images/works/work-1.jpg" alt="How-to-train-your-dragon toothless">
+                                    <img src="images/works/work-1.jpg" alt="How-to-train-your-dragon toothless" loading="lazy">
                                     <div class="wallpaper-overlay"></div>
                                     <div class="wallpaper-desc">
-                                        <p>How to train your dragon - Toothless</p>
+                                        <p>HTTYD - Toothless</p>
                                     </div>
                                 </a>
                             </div>
@@ -216,7 +220,7 @@
                         <div class="column">
                             <div class="wallpaper capoo-swimming_thm">
                                 <a class="click-in" data-modal-target="#modal-14">
-                                    <img src="images/works/work-14.jpg" alt="Capoo swimming">
+                                    <img src="images/works/work-14.jpg" alt="Capoo swimming" loading="lazy">
                                     <div class="wallpaper-overlay"></div>
                                     <div class="wallpaper-desc">
                                         <p>Capoo in Pool</p>
@@ -225,7 +229,7 @@
                             </div>
                             <div class="wallpaper">
                                 <a class="click-in" data-modal-target="#modal-11">
-                                    <img src="images/works/work-11.jpg" alt="Megumin magic staff">
+                                    <img src="images/works/work-11.jpg" alt="Megumin magic staff" loading="lazy">
                                     <div class="wallpaper-overlay"></div>
                                     <div class="wallpaper-desc">
                                         <p>Megumin's Belongings</p>
@@ -234,19 +238,19 @@
                             </div>
                             <div class="wallpaper love-is-war_building_thm">
                                 <a class="click-in" data-modal-target="#modal-8">
-                                    <img src="images/works/work-8.jpg" alt="love-is-war building">
+                                    <img src="images/works/work-8.jpg" alt="love-is-war building" loading="lazy">
                                     <div class="wallpaper-overlay"></div>
                                     <div class="wallpaper-desc">
-                                        <p>Love is War - Building</p>
+                                        <p>LoveIsWar - Building</p>
                                     </div>
                                 </a>
                             </div>
                             <div class="wallpaper lycoris-recoil-floral-wall_thm">
                                 <a class="click-in" data-modal-target="#modal-5">
-                                    <img src="images/works/work-5.jpg" alt="Lycoris-Recoil wall">
+                                    <img src="images/works/work-5.jpg" alt="Lycoris-Recoil wall" loading="lazy">
                                     <div class="wallpaper-overlay"></div>
                                     <div class="wallpaper-desc">
-                                        <p>Lycoris Recoil - Floral Wall</p>
+                                        <p>LycorisRecoil - Floral Wall</p>
                                     </div>
                                 </a>
                             </div>
@@ -343,12 +347,12 @@
                         <div class="relate__wrapper OV_relate__wrapper">
                             <i id="OV_left" class="fa-solid fa-chevron-left"></i>
                             <div class="relate__slider otherVersion">
-                                <img class="relate__img doodle-patterns-ov" src="images/works/brand pattern.jpg"
+                                <img class="relate__img doodle-patterns-ov" src="images/works/brand pattern_blue-orange.jpg"
                                     alt="img" draggable="false">
                                 <img class="relate__img doodle-patterns-ov"
-                                    src="images/works/brand pattern_blue-orange.jpg" alt="img" draggable="false">
-                                <img class="relate__img doodle-patterns-ov"
                                     src="images/works/brand pattern_pink-green.jpg" alt="img" draggable="false">
+                                <img class="relate__img doodle-patterns-ov"
+                                    src="images/works/brand pattern_purple-yellow.jpg" alt="img" draggable="false">
                             </div>
                             <i id="OV_right" class="fa-solid fa-chevron-right"></i>
                         </div>
@@ -601,7 +605,7 @@
                 </div>
 
                 <div class="modal-body">
-                    <img class="modal-img" src="images/works/work-11.jpg">
+                    <img class="modal-img modal-img-vertical" src="images/works/work-11.jpg">
                     <div class="img-info">
                         <div class="img-info__date img-info__Box">
                             <span class="gray">Date: </span><br> 2023/07
@@ -1190,7 +1194,7 @@
                 </div>
 
                 <div class="modal-body">
-                    <img class="modal-img" src="images/works/work-1.jpg">
+                    <img class="modal-img modal-img-vertical" src="images/works/work-1.jpg">
                     <div class="img-info">
                         <div class="img-info__date img-info__Box">
                             <span class="gray">Date: </span><br> 2022/03
@@ -1221,7 +1225,7 @@
                                 <img class="relate__img"
                                     src="https://64.media.tumblr.com/b8143d9412d2188984712437d4ea7f21/tumblr_nbchfmbsAk1sdwsrao1_500.jpg"
                                     alt="img" draggable="false">
-                                <img class="relate__img" src="https://cutewallpaper.org/28x/afapzsi4n/3256429950.jpg"
+                                <img class="relate__img" src="images/source/Green clouds.jpg"
                                     alt="img" draggable="false">
 
                             </div>

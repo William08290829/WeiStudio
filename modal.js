@@ -87,11 +87,16 @@ const checkVisibilityInterval = setInterval(function () {
     const modalActive = document.querySelector(".modal.active");
     if (modalActive !== null){
       const image = modalActive.querySelector('.modal-img');
-
-
       const imageUrl = image.getAttribute('src');
       const resolutionText = modalActive.querySelector('#resolution');
       const mediaTypeText = modalActive.querySelector('#mediaType');
+      const screenWidth = window.innerWidth;
+      if(screenWidth > 768) {
+        image.addEventListener('click', () =>{
+          const imageUrl = image.src;
+          window.open(imageUrl, '_blank');
+        })
+      }
 
       //算圖片解析度
       const width = image.naturalWidth;
