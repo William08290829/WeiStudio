@@ -311,11 +311,6 @@
   margin-bottom: 6px;
   opacity: 0.6;
 }
-.relate__placeholder .relate__placeholder-zh {
-  font-family: var(--chinese), sans-serif;
-  font-size: 14px;
-  opacity: 0.8;
-}
 
 .modal-body .img-original {
   width: 100%;

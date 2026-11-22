@@ -146,8 +146,7 @@ function setupSlider(section) {
       // 圖示用 span 而非 i，避免套到箭頭的 .relate__wrapper i 樣式
       placeholder.innerHTML =
         '<span class="fa-solid fa-link-slash relate__placeholder-icon"></span>' +
-        '<span>Image link expired</span>' +
-        '<span class="relate__placeholder-zh">圖片連結已失效</span>';
+        '<span>Image link expired</span>';
       img.replaceWith(placeholder);
       refresh();
     });
