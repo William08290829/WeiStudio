@@ -281,6 +281,42 @@
   margin-left: 0px;
 }
 
+/* 外連圖片失效時的佔位框 */
+.relate__placeholder {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  vertical-align: top;
+  box-sizing: border-box;
+  height: 300px;
+  width: 240px;
+  margin-left: 14px;
+  border: 2px dashed #3d4d4e55;
+  border-radius: 10px;
+  background-color: #e9e9e9;
+  color: var(--header-backgroud-color);
+  font-family: var(--p-font);
+  font-size: 18px;
+  white-space: normal;
+  text-align: center;
+  cursor: help;
+}
+.relate__placeholder:first-child {
+  margin-left: 0px;
+}
+.relate__placeholder .relate__placeholder-icon {
+  font-size: 32px;
+  margin-bottom: 6px;
+  opacity: 0.6;
+}
+.relate__placeholder .relate__placeholder-zh {
+  font-family: var(--chinese), sans-serif;
+  font-size: 14px;
+  opacity: 0.8;
+}
+
 .modal-body .img-original {
   width: 100%;
 }
@@ -300,7 +336,8 @@
 }
 
 @media screen and (max-width: 900px){
-  .relate__wrapper .relate__slider img {
+  .relate__wrapper .relate__slider img,
+  .relate__placeholder {
     height: 250px;
   }
 }

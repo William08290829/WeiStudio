@@ -138,11 +138,18 @@ function setupSlider(section) {
   // 圖片載入後寬度才確定，需重新計算
   slider.querySelectorAll('img').forEach(img => {
     img.addEventListener('load', refresh);
-    // 外連圖片失效時移除；整區都失效就隱藏整個區塊
+    // 外連圖片失效時，原位換成「連結已失效」佔位框（滑鼠移上去可看原網址）
     img.addEventListener('error', () => {
-      img.remove();
-      if (slider.querySelector('img') == null) section.style.display = 'none';
-      else refresh();
+      const placeholder = document.createElement('div');
+      placeholder.className = 'relate__placeholder';
+      placeholder.title = img.src;
+      // 圖示用 span 而非 i，避免套到箭頭的 .relate__wrapper i 樣式
+      placeholder.innerHTML =
+        '<span class="fa-solid fa-link-slash relate__placeholder-icon"></span>' +
+        '<span>Image link expired</span>' +
+        '<span class="relate__placeholder-zh">圖片連結已失效</span>';
+      img.replaceWith(placeholder);
+      refresh();
     });
   });
 
