@@ -156,21 +156,6 @@ window.addEventListener("scroll", function () {
 
 
 
-//FancyBox
-Fancybox.bind('[data-fancybox="gallery"]', {
-    //
-});
-jQuery.noConflict();
-$('[data-fancybox]').fancybox({
-    buttons: [
-        'zoom',
-        'share',
-        'fullScreen',
-        'slideShow',
-        'close'
-    ]
-})
-
 //Loading
 window.addEventListener('load', () => {
     const loader = document.querySelector('.loader');
@@ -179,8 +164,8 @@ window.addEventListener('load', () => {
         loader.classList.add('loader--hidden');
 
         loader.addEventListener('transitionend', () => {
-            document.body.removeChild(loader);
-        });
+            loader.remove();
+        }, { once: true });
     }
 });
 

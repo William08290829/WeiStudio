@@ -6,9 +6,6 @@ function smoothScroll(target, duration){
     // console.log(startPosition);
     
     var distance = targetPosition;
-    console.log("target: " + targetPosition);
-    console.log("start: " + startPosition);
-    console.log("distance: " + distance);
     var startTime = null;
     
 

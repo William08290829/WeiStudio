@@ -4,8 +4,6 @@ const closeModalButtons = document.querySelectorAll('[data-close-button]');
 let clickTimes = 0;
 let OV_nextImg = null;
 
-// const overlay = document.getElementById('overlay')
-const stopScroll = $('#modal_overlay')
 
 openModalDiv.forEach(button => {
   button.addEventListener('click', () => {
