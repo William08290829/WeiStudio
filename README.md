@@ -1,4 +1,4 @@
-# WEI studio
+# WeiStudio
 ![weistudio](https://github.com/user-attachments/assets/aec2a568-abaf-4069-b6d0-85af0597f319)
 	A website showcasing my personal portfolio of wallpaper designs created with **Photoshop** and **Illustrator**. Inspired by my favorite anime and TV series, each piece highlights my unique visual style and creative process. Through careful attention to color, composition, and detail, I aim to demonstrate my passion for design and my ability to transform ideas into compelling visual art.
 
