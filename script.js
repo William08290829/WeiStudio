@@ -141,18 +141,20 @@ window.addEventListener('load', () => {
 })
 
 //Hide Header
-var lastScrollTop = 0;
-header = document.getElementById("header")
+// Toggle a class (transform, GPU-friendly) at most once per frame
+const header = document.getElementById("header");
+let lastScrollTop = window.scrollY;
+let headerTicking = false;
 window.addEventListener("scroll", function () {
-    // console.log(isModalActive);
-    var scrollTop = window.scrollY || document.documentElement.scrollTop;
-    if (scrollTop > lastScrollTop) {
-        header.style.top = "-80px";
-    } else {
-        header.style.top = "0";
-    }
-    lastScrollTop = scrollTop;
-});
+    if (headerTicking) return;
+    headerTicking = true;
+    requestAnimationFrame(function () {
+        const scrollTop = window.scrollY;
+        header.classList.toggle("header--hidden", scrollTop > lastScrollTop);
+        lastScrollTop = scrollTop;
+        headerTicking = false;
+    });
+}, { passive: true });
 
 
 

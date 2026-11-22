@@ -88,6 +88,10 @@ main {
     transition: all 1s ease;
 }
 
+.header--hidden {
+    transform: translateY(-100%);
+}
+
 .header h1 {
     color: white;
     position: absolute;
