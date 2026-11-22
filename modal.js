@@ -91,11 +91,30 @@ const checkVisibilityInterval = setInterval(function () {
       const resolutionText = modalActive.querySelector('#resolution');
       const mediaTypeText = modalActive.querySelector('#mediaType');
       const screenWidth = window.innerWidth;
-      if(screenWidth > 768) {
-        image.addEventListener('click', () =>{
+      
+      // 點擊圖片可開啟新分頁
+      if(screenWidth > 768 && image !== null) {
+        // image.addEventListener('click', () =>{
+    
+        //   const imageUrl = image.src;
+        //   window.open(imageUrl, '_blank');
+    
+        //   // 在打開新視窗後設置一個延遲，以確保之後的點擊事件不會立即觸發
+        //   // setTimeout(() => {
+        //   //   isOpening = false;
+        //   // }, 1000); // 設置一秒延遲
+        // }, {once : true});
+        const openImageInNewTab = () => {
           const imageUrl = image.src;
           window.open(imageUrl, '_blank');
-        })
+        };
+      
+        // 移除之前的事件處理程序
+        image.removeEventListener('click', openImageInNewTab);
+      
+        // 添加新的事件處理程序
+        image.addEventListener('click', openImageInNewTab);
+
       }
 
       //算圖片解析度

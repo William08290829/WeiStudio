@@ -1,0 +1,7 @@
+# Dependencies (site loads libraries from CDN)
+node_modules/
+
+# OS files
+Thumbs.db
+desktop.ini
+.DS_Store
