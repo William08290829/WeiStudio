@@ -136,7 +136,15 @@ function setupSlider(section) {
   section.refreshSlider = refresh;
 
   // 圖片載入後寬度才確定，需重新計算
-  slider.querySelectorAll('img').forEach(img => img.addEventListener('load', refresh));
+  slider.querySelectorAll('img').forEach(img => {
+    img.addEventListener('load', refresh);
+    // 外連圖片失效時移除；整區都失效就隱藏整個區塊
+    img.addEventListener('error', () => {
+      img.remove();
+      if (slider.querySelector('img') == null) section.style.display = 'none';
+      else refresh();
+    });
+  });
 
   arrows.forEach(icon => {
     icon.addEventListener('click', () => {
