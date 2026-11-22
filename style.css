@@ -153,7 +153,7 @@ main {
 .darker1 {
     height: 150vh;
     background-color: #000000;
-    background-image: url(images/banner.png);
+    background-image: url("images/webp/banner.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -351,7 +351,7 @@ main {
     height: 70vh;
     align-items: center;
     /* align-items: center;    */
-    background-image: url(images/latest\ creation.png);
+    background-image: url("images/webp/latest creation.webp");
     background-repeat: no-repeat;
     background-position: 10% 58%;
     background-size: 150%;
@@ -518,7 +518,7 @@ main {
 /* Porfolio */
 /* ------------------------------------------------------------------- */
 .porfolio__title {
-    background-image: url(images/website_portfolio.jpg);
+    background-image: url("images/webp/website_portfolio.webp");
     color: white;
     background-size: cover;
     background-repeat: no-repeat;
@@ -603,7 +603,7 @@ main {
 
 .porfolio-page {
     background-color: var(--backgroud-color);
-    background-image: url(images/bg_brand\ pattern.jpg);
+    background-image: url("images/webp/bg_brand pattern.webp");
     background-size: cover;
 }
 
@@ -952,7 +952,7 @@ main {
 /* About */
 /* ------------------------------------------------------------------- */
 .about__title {
-    background-image: url(images/website_about.jpg);
+    background-image: url("images/webp/website_about.webp");
     color: white;
     background-size: cover;
     background-repeat: no-repeat;
@@ -969,7 +969,7 @@ main {
 
 .about {
     background-color: var(--backgroud-color);
-    background-image: url(images/bg_brand\ pattern.jpg);
+    background-image: url("images/webp/bg_brand pattern.webp");
     background-size: cover;
 }
 
@@ -1379,7 +1379,7 @@ main {
     max-height: 600px;
     /* width: 100vw; */
     background-color: transparent;
-    /* background-image: url(images/bg_brand\ pattern.jpg); */
+    /* background-image: url("images/webp/bg_brand pattern.webp"); */
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -1496,7 +1496,7 @@ main {
 /* ------------------------------------------------------------------- */
 
 .contact__title {
-    background-image: url(images/website_contact_加筆畫.jpg);
+    background-image: url("images/webp/website_contact_加筆畫.webp");
     color: white;
     background-size: cover;
     background-repeat: no-repeat;
@@ -1513,7 +1513,7 @@ main {
 
 .contact {
     background-color: var(--backgroud-color);
-    background-image: url(images/bg_brand\ pattern.jpg);
+    background-image: url("images/webp/bg_brand pattern.webp");
     background-size: cover;
 
     /* height: 100vh; */
